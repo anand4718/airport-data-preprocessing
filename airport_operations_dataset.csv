@@ -1,0 +1,501 @@
+Flight_ID,Airline,Origin_Airport,Destination_Airport,Aircraft_Type,Weather_Condition,Runway_Used,Distance_km,Flight_Duration_min,Passenger_Count,Baggage_Handling_min,Departure_Delay_min
+6E-202,Air India,BLR (Bengaluru),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,627.7,117.7,103.0,24.7,48.1
+AI-535,IndiGo,MAA (Chennai),HYD (Hyderabad),ATR 72,Clear,09L/27R,1545.7,233.1,124.0,20.0,12.0
+6E-960,Air India,BOM (Mumbai),CCU (Kolkata),Airbus A321neo,Clear,10/28,1386.2,200.4,65.0,31.6,28.4
+AI-370,Air India,MAA (Chennai),BOM (Mumbai),Boeing 737 MAX,Clear,09R/27L,1387.3,,67.0,27.6,40.4
+6E-206,IndiGo,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Clear,09L/27R,1275.4,193.0,139.0,20.8,31.7
+AI-171,Air India,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,1107.8,172.3,,30.4,5.6
+6E-800,IndiGo,MAA (Chennai),BLR (Bengaluru),Airbus A321neo,Overcast,09R/27L,1369.1,204.5,55.0,28.4,2.2
+AI-120,IndiGo,BLR (Bengaluru),HYD (Hyderabad),Boeing 737 MAX,Overcast,10/28,1336.7,201.3,157.0,20.1,10.9
+6E-714,Vistara,HYD (Hyderabad),DEL (Delhi),Airbus A320neo,Fog,11/29,958.4,164.8,224.0,24.4,73.4
+AI-221,IndiGo,BOM (Mumbai),CCU (Kolkata),Airbus A321neo,Thunderstorm,09L/27R,870.6,146.8,97.0,22.0,67.2
+6E-566,IndiGo,CCU (Kolkata),DEL (Delhi),Boeing 737 MAX,Overcast,11/29,1140.7,174.0,91.0,40.8,27.0
+AI-314,Air India,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1719.6,258.7,125.0,28.2,1.7
+6E-430,SpiceJet,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Overcast,10/28,604.4,90.3,126.0,26.1,24.6
+AI-558,IndiGo,DEL (Delhi),BOM (Mumbai),Boeing 737 MAX,Rain,11/29,513.0,92.4,181.0,27.8,28.4
+6E-187,Air India,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Clear,10/28,1165.9,193.5,179.0,33.3,19.2
+AI-472,IndiGo,HYD (Hyderabad),BOM (Mumbai),Boeing 737 MAX,Clear,09L/27R,1120.4,167.2,108.0,24.5,9.7
+6E-199,IndiGo,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Rain,11/29,1169.3,167.4,204.0,21.5,36.8
+AI-971,Air India,HYD (Hyderabad),GOI (Goa),Boeing 737 MAX,Clear,10/28,1197.6,,76.0,30.1,6.4
+6E-763,Air India,HYD (Hyderabad),DEL (Delhi),Boeing 787 Dreamliner,Overcast,11/29,1010.7,143.9,128.0,24.0,30.4
+AI-230,Air India,HYD (Hyderabad),CCU (Kolkata),Airbus A320neo,Overcast,09L/27R,1695.9,238.3,121.0,18.6,17.4
+6E-761,SpiceJet,HYD (Hyderabad),BLR (Bengaluru),Boeing 787 Dreamliner,Clear,10/28,459.6,77.6,56.0,17.4,11.4
+AI-408,Akasa Air,CCU (Kolkata),BLR (Bengaluru),Airbus A320neo,Clear,09L/27R,768.6,108.4,160.0,34.2,56.3
+6E-869,Air India,CCU (Kolkata),BOM (Mumbai),Airbus A321neo,Clear,10/28,1058.7,161.3,168.0,25.8,20.6
+AI-443,IndiGo,BOM (Mumbai),HYD (Hyderabad),ATR 72,Clear,09R/27L,442.7,88.0,223.0,21.5,55.8
+6E-591,SpiceJet,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,10/28,1029.7,148.2,112.0,23.6,1.4
+AI-513,IndiGo,HYD (Hyderabad),MAA (Chennai),Boeing 737 MAX,Rain,11/29,1764.6,270.5,173.0,29.8,32.0
+6E-905,Air India,BOM (Mumbai),BLR (Bengaluru),Airbus A321neo,Clear,10/28,,172.9,61.0,23.2,46.3
+AI-485,IndiGo,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,1192.3,189.3,190.0,16.3,17.2
+6E-291,IndiGo,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Clear,09L/27R,595.9,92.9,92.0,,26.8
+AI-376,Akasa Air,BLR (Bengaluru),BOM (Mumbai),Boeing 737 MAX,Thunderstorm,10/28,853.5,142.3,66.0,32.3,62.3
+6E-260,Vistara,CCU (Kolkata),MAA (Chennai),ATR 72,Clear,11/29,949.9,135.7,112.0,31.8,8.3
+AI-559,SpiceJet,MAA (Chennai),CCU (Kolkata),ATR 72,Clear,09R/27L,972.9,158.6,169.0,21.6,0.0
+6E-413,Air India,DEL (Delhi),HYD (Hyderabad),ATR 72,Thunderstorm,11/29,1612.7,236.7,85.0,32.6,68.8
+AI-121,IndiGo,MAA (Chennai),CCU (Kolkata),Airbus A320neo,Rain,09R/27L,1323.1,201.9,57.0,,30.5
+6E-352,IndiGo,BLR (Bengaluru),HYD (Hyderabad),ATR 72,Clear,09L/27R,655.4,95.6,118.0,32.4,6.1
+AI-847,IndiGo,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Rain,11/29,1198.6,170.9,139.0,28.4,101.1
+6E-956,Air India,MAA (Chennai),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,1299.3,199.2,,15.9,7.1
+AI-660,SpiceJet,CCU (Kolkata),DEL (Delhi),Airbus A320neo,Clear,10/28,1556.1,218.0,77.0,35.5,27.4
+6E-574,SpiceJet,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Clear,09L/27R,1732.2,255.6,167.0,25.3,31.9
+AI-158,IndiGo,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Clear,10/28,694.0,98.9,142.0,28.5,5.6
+6E-610,Akasa Air,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,775.7,131.9,224.0,16.9,12.3
+AI-781,SpiceJet,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Clear,11/29,597.0,87.3,125.0,28.0,14.4
+6E-575,Air India,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Clear,11/29,1006.4,159.7,150.0,31.6,17.4
+AI-799,Air India,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Overcast,09L/27R,1286.5,197.8,207.0,36.6,33.4
+6E-882,Air India,DEL (Delhi),BLR (Bengaluru),Airbus A320neo,Rain,09L/27R,1494.9,212.4,200.0,33.4,53.1
+AI-289,IndiGo,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Clear,09L/27R,1069.6,168.4,193.0,28.3,78.1
+6E-786,IndiGo,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Overcast,11/29,972.1,152.2,63.0,15.7,10.5
+AI-662,SpiceJet,CCU (Kolkata),GOI (Goa),Airbus A320neo,Clear,09R/27L,1160.7,169.4,120.0,25.8,7.1
+6E-975,IndiGo,DEL (Delhi),CCU (Kolkata),Boeing 737 MAX,Rain,10/28,765.9,112.0,229.0,21.4,43.9
+AI-666,IndiGo,CCU (Kolkata),DEL (Delhi),Boeing 737 MAX,Overcast,10/28,1935.8,258.5,173.0,26.4,0.0
+6E-343,IndiGo,DEL (Delhi),MAA (Chennai),Boeing 737 MAX,Fog,11/29,456.9,84.4,174.0,17.7,80.2
+AI-931,IndiGo,BOM (Mumbai),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1173.9,160.9,86.0,23.7,0.0
+6E-604,Vistara,HYD (Hyderabad),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,1909.4,275.5,78.0,21.9,1.7
+AI-230,SpiceJet,DEL (Delhi),HYD (Hyderabad),Airbus A321neo,Clear,09R/27L,1102.7,164.4,192.0,21.7,29.9
+6E-584,Air India,CCU (Kolkata),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1024.0,163.3,224.0,,13.4
+AI-918,IndiGo,BOM (Mumbai),BLR (Bengaluru),Boeing 737 MAX,Clear,09R/27L,957.0,144.6,223.0,24.2,10.6
+6E-746,Air India,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Thunderstorm,09L/27R,1027.8,153.7,229.0,26.7,74.8
+AI-120,Air India,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Clear,10/28,1649.1,247.2,68.0,10.0,37.6
+6E-940,IndiGo,HYD (Hyderabad),BLR (Bengaluru),Airbus A320neo,Clear,11/29,300.0,63.4,155.0,10.7,5.4
+AI-266,Air India,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Rain,09R/27L,1713.4,251.6,70.0,23.0,63.1
+6E-373,IndiGo,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,530.4,95.4,113.0,23.8,6.8
+AI-487,Air India,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Rain,09R/27L,993.3,137.1,214.0,26.1,54.2
+6E-700,Air India,MAA (Chennai),BOM (Mumbai),Boeing 737 MAX,Clear,10/28,928.3,151.3,76.0,20.6,43.2
+AI-415,IndiGo,BOM (Mumbai),HYD (Hyderabad),ATR 72,Clear,10/28,1335.4,204.2,104.0,25.1,8.5
+6E-113,IndiGo,BOM (Mumbai),GOI (Goa),ATR 72,Clear,11/29,460.8,71.3,78.0,25.8,18.7
+AI-341,Air India,BLR (Bengaluru),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,1284.9,188.9,197.0,20.6,0.0
+6E-876,Air India,BOM (Mumbai),MAA (Chennai),Boeing 787 Dreamliner,Thunderstorm,09L/27R,1909.7,274.2,74.0,31.1,82.6
+AI-445,Vistara,BLR (Bengaluru),HYD (Hyderabad),Airbus A320neo,Clear,11/29,554.7,92.6,119.0,26.1,12.2
+6E-664,SpiceJet,DEL (Delhi),GOI (Goa),Airbus A320neo,Clear,11/29,1175.9,180.1,112.0,28.3,17.5
+AI-997,IndiGo,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,835.2,145.7,213.0,25.4,0.0
+6E-439,IndiGo,BLR (Bengaluru),DEL (Delhi),Boeing 737 MAX,Clear,09R/27L,1270.4,200.2,179.0,37.6,6.3
+AI-191,Air India,HYD (Hyderabad),CCU (Kolkata),Airbus A321neo,Thunderstorm,09R/27L,,154.6,199.0,28.6,51.7
+6E-466,IndiGo,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Clear,11/29,843.4,138.7,65.0,22.1,9.0
+AI-554,Air India,BLR (Bengaluru),DEL (Delhi),Airbus A321neo,Overcast,09R/27L,1295.1,206.0,195.0,29.9,15.9
+6E-527,Vistara,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Fog,09L/27R,1821.7,266.8,149.0,15.2,77.6
+AI-608,Air India,DEL (Delhi),GOI (Goa),Airbus A321neo,Overcast,10/28,1023.6,167.4,79.0,25.7,27.0
+6E-875,IndiGo,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Thunderstorm,10/28,1387.9,225.2,94.0,26.9,70.7
+AI-134,Air India,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,582.7,107.9,68.0,25.8,60.4
+6E-305,Air India,CCU (Kolkata),BOM (Mumbai),Boeing 737 MAX,Clear,11/29,717.4,118.1,83.0,23.0,18.0
+AI-180,Air India,DEL (Delhi),BLR (Bengaluru),Airbus A320neo,Clear,11/29,1289.0,202.3,190.0,18.9,47.5
+6E-661,Vistara,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Overcast,11/29,1693.6,247.3,220.0,20.3,22.9
+AI-971,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Fog,11/29,1242.2,,111.0,25.6,52.2
+6E-487,Akasa Air,BLR (Bengaluru),GOI (Goa),ATR 72,Clear,11/29,974.8,146.5,167.0,18.3,3.1
+AI-101,Vistara,MAA (Chennai),GOI (Goa),Boeing 737 MAX,Overcast,09R/27L,1099.7,182.3,149.0,,33.8
+6E-489,IndiGo,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Clear,10/28,599.8,91.8,71.0,10.0,0.3
+AI-665,IndiGo,HYD (Hyderabad),GOI (Goa),Boeing 737 MAX,Overcast,10/28,1341.8,214.2,,23.1,8.4
+6E-205,IndiGo,BOM (Mumbai),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,1452.9,218.7,229.0,25.7,16.6
+AI-871,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Fog,11/29,919.2,128.6,160.0,28.0,59.2
+6E-921,IndiGo,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Overcast,09R/27L,912.0,145.3,213.0,19.5,27.1
+AI-576,SpiceJet,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Clear,10/28,1206.4,159.9,122.0,31.8,5.1
+6E-802,IndiGo,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Clear,09L/27R,925.3,149.6,196.0,16.6,5.5
+AI-501,IndiGo,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,1073.5,172.0,87.0,21.6,19.0
+6E-829,Vistara,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,11/29,1939.9,272.7,119.0,28.7,58.5
+AI-655,IndiGo,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Clear,10/28,1001.2,,165.0,31.2,28.1
+6E-261,Vistara,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Rain,10/28,956.7,167.1,128.0,16.6,64.1
+AI-301,IndiGo,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Overcast,10/28,841.0,127.1,197.0,40.9,37.0
+6E-369,IndiGo,HYD (Hyderabad),DEL (Delhi),Boeing 737 MAX,Clear,10/28,1397.7,195.8,58.0,19.6,17.7
+AI-962,SpiceJet,CCU (Kolkata),DEL (Delhi),Airbus A320neo,Clear,11/29,,171.8,81.0,17.1,3.0
+6E-915,Air India,DEL (Delhi),BLR (Bengaluru),Boeing 787 Dreamliner,Rain,09L/27R,840.3,151.7,181.0,28.0,48.6
+AI-370,Vistara,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Overcast,10/28,1628.5,237.2,99.0,22.9,25.1
+6E-555,SpiceJet,CCU (Kolkata),BOM (Mumbai),ATR 72,Clear,09R/27L,1667.8,252.5,131.0,22.0,23.3
+AI-561,Vistara,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Overcast,09L/27R,859.8,148.1,54.0,28.6,23.7
+6E-826,IndiGo,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Clear,10/28,353.4,59.7,197.0,15.8,15.3
+AI-351,IndiGo,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,09L/27R,1503.0,215.5,136.0,14.8,3.0
+6E-801,SpiceJet,BLR (Bengaluru),MAA (Chennai),Boeing 787 Dreamliner,Clear,09R/27L,826.1,142.5,175.0,21.4,10.5
+AI-395,Vistara,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1416.3,225.7,124.0,31.5,3.6
+6E-824,Akasa Air,MAA (Chennai),HYD (Hyderabad),ATR 72,Clear,09R/27L,312.0,67.2,214.0,21.7,34.9
+AI-819,Air India,CCU (Kolkata),GOI (Goa),Airbus A321neo,Thunderstorm,11/29,1457.0,205.5,71.0,34.6,61.4
+6E-848,IndiGo,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Rain,10/28,615.5,121.9,117.0,32.2,24.7
+AI-437,SpiceJet,CCU (Kolkata),DEL (Delhi),Airbus A320neo,Overcast,10/28,1392.3,200.3,93.0,26.7,24.6
+6E-978,IndiGo,CCU (Kolkata),BOM (Mumbai),Boeing 737 MAX,Clear,10/28,1105.7,164.1,83.0,27.0,18.8
+AI-152,Vistara,MAA (Chennai),GOI (Goa),Airbus A320neo,Clear,10/28,718.4,119.2,126.0,26.7,7.2
+6E-891,Vistara,BLR (Bengaluru),HYD (Hyderabad),ATR 72,Overcast,11/29,937.2,160.5,91.0,26.0,14.7
+AI-316,Air India,BOM (Mumbai),HYD (Hyderabad),Airbus A321neo,Clear,10/28,1374.5,211.8,186.0,22.8,14.4
+6E-863,SpiceJet,DEL (Delhi),GOI (Goa),Airbus A320neo,Clear,09L/27R,1142.4,176.5,155.0,23.5,0.7
+AI-287,SpiceJet,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Clear,10/28,1333.8,202.5,144.0,18.6,53.8
+6E-479,IndiGo,BLR (Bengaluru),CCU (Kolkata),ATR 72,Rain,11/29,1890.6,272.5,184.0,11.7,67.3
+AI-592,Vistara,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Clear,10/28,474.3,88.8,117.0,31.6,12.8
+6E-140,Air India,BOM (Mumbai),MAA (Chennai),ATR 72,Clear,09L/27R,1746.9,227.6,196.0,25.9,6.8
+AI-256,Vistara,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Rain,11/29,1141.7,169.3,208.0,,50.2
+6E-114,IndiGo,HYD (Hyderabad),MAA (Chennai),Boeing 737 MAX,Clear,11/29,740.5,121.1,177.0,27.4,0.0
+AI-912,Vistara,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,567.9,84.2,212.0,20.0,9.9
+6E-164,IndiGo,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,1024.4,160.4,134.0,19.0,13.0
+AI-956,IndiGo,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Clear,09L/27R,1468.7,213.8,208.0,23.3,51.9
+6E-938,Vistara,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Rain,09L/27R,1049.0,177.4,132.0,33.2,20.3
+AI-620,IndiGo,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,,09L/27R,1704.5,263.0,144.0,18.0,19.1
+6E-443,IndiGo,HYD (Hyderabad),GOI (Goa),Boeing 737 MAX,Clear,11/29,519.5,84.6,81.0,10.0,20.5
+AI-228,Akasa Air,DEL (Delhi),MAA (Chennai),Airbus A321neo,Thunderstorm,11/29,1095.2,164.5,115.0,21.9,70.1
+6E-747,Akasa Air,CCU (Kolkata),DEL (Delhi),Airbus A320neo,Thunderstorm,10/28,599.0,99.1,,31.9,60.0
+AI-571,Air India,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Thunderstorm,10/28,1245.5,181.6,187.0,14.6,125.2
+6E-162,Air India,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Clear,09R/27L,1454.8,,179.0,17.9,18.1
+AI-238,Air India,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Clear,10/28,931.7,136.6,109.0,26.6,18.5
+6E-598,IndiGo,BLR (Bengaluru),MAA (Chennai),Boeing 737 MAX,Fog,10/28,300.0,48.7,66.0,40.4,49.2
+AI-692,IndiGo,MAA (Chennai),BOM (Mumbai),Boeing 737 MAX,Rain,09L/27R,1179.6,183.5,145.0,16.9,41.7
+6E-491,SpiceJet,BOM (Mumbai),BLR (Bengaluru),Airbus A320neo,Clear,09L/27R,1274.7,196.3,193.0,16.6,6.1
+AI-774,SpiceJet,HYD (Hyderabad),BOM (Mumbai),Airbus A320neo,Clear,10/28,1261.7,180.2,65.0,27.0,1.0
+6E-518,SpiceJet,DEL (Delhi),BOM (Mumbai),Boeing 737 MAX,Clear,09R/27L,1594.3,241.5,95.0,,7.0
+AI-388,SpiceJet,HYD (Hyderabad),MAA (Chennai),Boeing 737 MAX,Thunderstorm,09L/27R,671.6,103.2,216.0,21.3,95.4
+6E-478,IndiGo,BOM (Mumbai),GOI (Goa),Boeing 787 Dreamliner,,10/28,1372.1,205.5,208.0,15.3,2.6
+AI-872,Air India,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,,10/28,1577.0,238.5,156.0,27.6,0.0
+6E-589,IndiGo,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,388.6,71.5,137.0,28.7,14.2
+AI-330,Air India,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Overcast,09R/27L,1227.9,188.3,178.0,35.7,23.5
+6E-140,Air India,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Rain,11/29,898.3,134.6,188.0,28.9,25.1
+AI-127,Vistara,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,1067.4,160.4,168.0,,21.4
+6E-234,IndiGo,CCU (Kolkata),HYD (Hyderabad),Boeing 737 MAX,Rain,09L/27R,1239.1,183.2,134.0,23.4,30.3
+AI-300,IndiGo,MAA (Chennai),CCU (Kolkata),Boeing 787 Dreamliner,Fog,09R/27L,905.1,133.2,53.0,39.6,35.6
+6E-939,IndiGo,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Clear,10/28,829.7,128.9,120.0,22.6,2.0
+AI-879,SpiceJet,CCU (Kolkata),GOI (Goa),Airbus A320neo,Clear,10/28,1113.7,153.0,203.0,21.3,30.7
+6E-132,Air India,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,665.1,103.8,160.0,35.9,0.0
+AI-147,IndiGo,BLR (Bengaluru),DEL (Delhi),Boeing 737 MAX,Rain,09R/27L,665.7,105.9,99.0,16.2,27.5
+6E-602,IndiGo,DEL (Delhi),GOI (Goa),Airbus A320neo,Overcast,09R/27L,1371.7,200.3,189.0,13.9,12.9
+AI-506,SpiceJet,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Overcast,11/29,640.5,103.0,144.0,25.7,36.0
+6E-673,IndiGo,BOM (Mumbai),GOI (Goa),Airbus A320neo,Rain,09R/27L,1366.5,201.6,141.0,25.0,31.1
+AI-827,Vistara,BLR (Bengaluru),GOI (Goa),Airbus A321neo,Clear,09L/27R,1285.0,196.1,114.0,23.6,6.7
+6E-904,SpiceJet,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Thunderstorm,11/29,409.7,83.4,96.0,31.0,61.2
+AI-198,IndiGo,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Clear,11/29,829.0,124.0,155.0,19.6,7.8
+6E-783,IndiGo,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,1577.6,218.3,179.0,25.4,12.8
+AI-971,Akasa Air,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Overcast,09L/27R,707.5,103.9,155.0,22.8,25.2
+6E-825,IndiGo,HYD (Hyderabad),BOM (Mumbai),Airbus A320neo,Rain,11/29,914.2,137.0,73.0,,37.7
+AI-646,IndiGo,CCU (Kolkata),BOM (Mumbai),Boeing 737 MAX,Clear,10/28,1284.8,187.8,53.0,24.6,0.0
+6E-838,Vistara,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Rain,11/29,1413.4,200.8,157.0,30.1,30.8
+AI-712,Vistara,CCU (Kolkata),BOM (Mumbai),ATR 72,Thunderstorm,09R/27L,999.4,140.3,68.0,37.7,75.2
+6E-561,Akasa Air,MAA (Chennai),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,861.0,130.2,203.0,28.5,9.7
+AI-742,SpiceJet,BOM (Mumbai),HYD (Hyderabad),Boeing 737 MAX,,09R/27L,1668.9,244.3,89.0,10.0,73.8
+6E-868,IndiGo,BOM (Mumbai),DEL (Delhi),Airbus A321neo,Clear,10/28,1795.6,265.4,99.0,24.8,55.7
+AI-104,IndiGo,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1491.5,213.3,220.0,25.3,66.3
+6E-317,SpiceJet,CCU (Kolkata),MAA (Chennai),Boeing 737 MAX,Clear,10/28,1134.1,167.1,124.0,30.6,31.7
+AI-602,Air India,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Thunderstorm,09R/27L,776.7,114.3,61.0,26.1,74.8
+6E-866,Air India,CCU (Kolkata),GOI (Goa),Airbus A320neo,Overcast,11/29,767.8,,76.0,32.5,28.6
+AI-497,Vistara,BLR (Bengaluru),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,1309.0,,162.0,27.4,2.0
+6E-970,IndiGo,HYD (Hyderabad),GOI (Goa),Boeing 787 Dreamliner,Clear,09L/27R,1267.4,194.7,98.0,34.4,12.2
+AI-894,Air India,CCU (Kolkata),BLR (Bengaluru),Boeing 737 MAX,Overcast,11/29,1660.6,223.6,193.0,22.4,18.3
+6E-492,IndiGo,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Clear,10/28,1360.2,197.8,179.0,25.9,21.2
+AI-306,Air India,BOM (Mumbai),BLR (Bengaluru),Boeing 737 MAX,Thunderstorm,09R/27L,498.8,89.5,109.0,30.0,91.7
+6E-114,IndiGo,BOM (Mumbai),HYD (Hyderabad),Boeing 737 MAX,Rain,10/28,1520.8,224.6,79.0,21.6,34.5
+AI-957,IndiGo,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,10/28,700.8,140.4,133.0,20.3,11.8
+6E-653,IndiGo,CCU (Kolkata),GOI (Goa),Boeing 737 MAX,Fog,09L/27R,946.4,149.7,215.0,21.2,94.7
+AI-991,Air India,HYD (Hyderabad),MAA (Chennai),Boeing 787 Dreamliner,Clear,11/29,1200.1,170.0,77.0,20.5,3.3
+6E-560,SpiceJet,BLR (Bengaluru),HYD (Hyderabad),Airbus A320neo,Fog,09L/27R,1898.3,272.2,74.0,28.1,61.5
+AI-790,Air India,BOM (Mumbai),MAA (Chennai),Boeing 737 MAX,Overcast,09L/27R,2344.0,314.8,145.0,14.0,42.1
+6E-674,Akasa Air,BOM (Mumbai),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,1342.7,198.2,174.0,15.7,23.0
+AI-963,IndiGo,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,10/28,1026.7,148.6,59.0,36.2,13.8
+6E-842,IndiGo,HYD (Hyderabad),BLR (Bengaluru),Airbus A320neo,Thunderstorm,09L/27R,1313.8,204.3,91.0,20.6,65.6
+AI-340,Vistara,HYD (Hyderabad),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,1455.1,208.5,89.0,26.2,5.3
+6E-663,IndiGo,CCU (Kolkata),MAA (Chennai),ATR 72,,11/29,971.7,148.4,126.0,16.1,37.0
+AI-195,Akasa Air,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,Clear,11/29,1818.1,,154.0,25.6,10.7
+6E-833,IndiGo,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Overcast,09L/27R,1192.0,196.3,167.0,20.7,15.3
+AI-584,Akasa Air,MAA (Chennai),CCU (Kolkata),ATR 72,Clear,11/29,1299.1,190.0,91.0,15.6,0.0
+6E-506,IndiGo,DEL (Delhi),CCU (Kolkata),Airbus A321neo,Overcast,11/29,1366.4,220.5,96.0,33.0,9.6
+AI-330,Vistara,BOM (Mumbai),GOI (Goa),Airbus A320neo,Thunderstorm,09L/27R,1268.6,197.3,214.0,32.1,119.6
+6E-848,Air India,CCU (Kolkata),DEL (Delhi),Airbus A320neo,Clear,10/28,1435.6,216.2,71.0,,6.2
+AI-754,Akasa Air,HYD (Hyderabad),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,853.1,137.4,156.0,31.0,19.8
+6E-270,IndiGo,BLR (Bengaluru),HYD (Hyderabad),Boeing 787 Dreamliner,Clear,11/29,876.7,140.8,76.0,36.4,1.5
+AI-640,Air India,HYD (Hyderabad),MAA (Chennai),Airbus A321neo,Rain,10/28,659.9,88.7,90.0,,53.8
+6E-135,Akasa Air,BOM (Mumbai),BLR (Bengaluru),Boeing 737 MAX,Rain,09R/27L,1275.8,187.3,129.0,27.9,67.4
+AI-624,Air India,MAA (Chennai),DEL (Delhi),ATR 72,Clear,10/28,1411.6,,211.0,26.2,18.8
+6E-259,Air India,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Overcast,11/29,1283.1,190.6,209.0,28.9,9.8
+AI-938,SpiceJet,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1769.8,241.9,138.0,22.8,11.3
+6E-798,Air India,BOM (Mumbai),BLR (Bengaluru),Airbus A320neo,Clear,09L/27R,1097.8,165.8,115.0,23.3,33.5
+AI-342,Air India,MAA (Chennai),DEL (Delhi),ATR 72,Rain,09R/27L,1367.5,219.4,61.0,27.7,37.1
+6E-185,Air India,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,663.3,120.9,217.0,22.2,35.6
+AI-895,Vistara,MAA (Chennai),HYD (Hyderabad),ATR 72,Clear,09R/27L,945.2,145.4,,22.8,9.5
+6E-677,IndiGo,DEL (Delhi),MAA (Chennai),ATR 72,Clear,11/29,1378.2,213.3,125.0,25.0,42.5
+AI-781,IndiGo,BOM (Mumbai),GOI (Goa),Boeing 737 MAX,Rain,11/29,1439.6,208.3,139.0,31.9,42.4
+6E-656,Akasa Air,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,982.4,,59.0,18.2,0.0
+AI-673,Vistara,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Clear,10/28,1071.4,153.6,145.0,29.6,1.5
+6E-745,Air India,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Overcast,09R/27L,,101.3,225.0,29.8,13.4
+AI-895,Air India,DEL (Delhi),BLR (Bengaluru),Airbus A320neo,Rain,10/28,,,69.0,29.7,58.3
+6E-127,IndiGo,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Clear,10/28,1456.2,,88.0,20.2,27.3
+AI-719,IndiGo,CCU (Kolkata),HYD (Hyderabad),Airbus A321neo,Clear,11/29,1330.1,194.3,109.0,14.8,19.4
+6E-655,Air India,DEL (Delhi),BOM (Mumbai),Boeing 737 MAX,Clear,10/28,1300.3,212.4,115.0,28.4,8.9
+AI-439,IndiGo,DEL (Delhi),GOI (Goa),Airbus A320neo,Clear,09R/27L,1119.9,185.6,114.0,26.1,2.2
+6E-897,Air India,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Clear,11/29,1102.8,189.2,228.0,31.0,26.9
+AI-430,IndiGo,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,,129.9,173.0,20.8,12.9
+6E-739,Akasa Air,BLR (Bengaluru),HYD (Hyderabad),Boeing 737 MAX,Overcast,09L/27R,1379.5,206.9,213.0,29.6,9.4
+AI-605,Akasa Air,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Overcast,11/29,1268.4,174.0,,,24.7
+6E-447,SpiceJet,HYD (Hyderabad),DEL (Delhi),Airbus A321neo,Clear,09R/27L,,207.7,204.0,24.4,1.5
+AI-572,Air India,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Rain,09L/27R,889.6,126.9,179.0,27.5,34.0
+6E-330,IndiGo,BOM (Mumbai),CCU (Kolkata),Boeing 787 Dreamliner,Clear,09L/27R,300.0,62.2,208.0,27.3,6.7
+AI-289,Vistara,CCU (Kolkata),BOM (Mumbai),Airbus A321neo,Fog,10/28,1538.9,214.2,106.0,20.1,44.9
+6E-324,SpiceJet,CCU (Kolkata),GOI (Goa),Airbus A320neo,Overcast,10/28,908.5,135.2,127.0,28.2,77.3
+AI-484,IndiGo,BOM (Mumbai),BLR (Bengaluru),Airbus A321neo,Clear,09R/27L,754.9,112.3,,34.7,2.8
+6E-476,Vistara,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Overcast,11/29,,197.6,64.0,25.1,14.3
+AI-382,Vistara,BLR (Bengaluru),BOM (Mumbai),ATR 72,Clear,09R/27L,,140.4,61.0,16.2,2.3
+6E-732,Vistara,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Overcast,11/29,1524.0,217.7,150.0,20.9,25.7
+AI-727,SpiceJet,BOM (Mumbai),GOI (Goa),Airbus A321neo,Clear,09L/27R,1346.8,207.9,205.0,14.3,12.7
+6E-844,Air India,CCU (Kolkata),BLR (Bengaluru),Airbus A321neo,Clear,10/28,1373.4,192.1,133.0,32.7,21.7
+AI-358,Air India,BOM (Mumbai),CCU (Kolkata),ATR 72,Rain,09R/27L,553.6,96.0,174.0,29.6,19.1
+6E-458,Vistara,HYD (Hyderabad),CCU (Kolkata),ATR 72,Clear,09R/27L,1584.8,243.5,152.0,22.0,10.5
+AI-809,Vistara,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Rain,11/29,1204.5,175.5,73.0,16.5,37.7
+6E-555,IndiGo,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Clear,11/29,,139.8,198.0,20.0,35.7
+AI-510,IndiGo,BOM (Mumbai),BLR (Bengaluru),Airbus A320neo,Overcast,09R/27L,1157.4,172.0,187.0,,51.3
+6E-748,IndiGo,DEL (Delhi),BLR (Bengaluru),Airbus A320neo,Overcast,11/29,389.5,83.7,159.0,25.7,11.5
+AI-417,Vistara,CCU (Kolkata),HYD (Hyderabad),Boeing 737 MAX,Clear,09R/27L,1263.5,190.4,127.0,25.5,13.4
+6E-776,Akasa Air,DEL (Delhi),MAA (Chennai),Airbus A320neo,Clear,09R/27L,688.3,106.5,150.0,33.0,50.1
+AI-324,IndiGo,MAA (Chennai),GOI (Goa),Boeing 787 Dreamliner,Clear,09R/27L,558.9,99.4,195.0,20.8,10.1
+6E-918,Air India,BOM (Mumbai),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,491.1,74.5,191.0,16.0,37.3
+AI-333,IndiGo,HYD (Hyderabad),MAA (Chennai),ATR 72,Clear,11/29,1545.1,232.8,211.0,18.1,8.6
+6E-783,Akasa Air,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Overcast,10/28,848.3,137.2,177.0,24.9,48.9
+AI-763,Vistara,BOM (Mumbai),GOI (Goa),Airbus A321neo,Thunderstorm,10/28,1713.5,245.4,107.0,20.6,89.0
+6E-926,Vistara,MAA (Chennai),DEL (Delhi),Airbus A321neo,Thunderstorm,11/29,885.7,129.7,125.0,23.2,110.1
+AI-473,Air India,CCU (Kolkata),MAA (Chennai),Boeing 737 MAX,Rain,09R/27L,417.1,66.7,199.0,22.3,46.0
+6E-771,Air India,BLR (Bengaluru),HYD (Hyderabad),Boeing 737 MAX,Rain,10/28,653.4,112.5,85.0,30.9,33.8
+AI-707,IndiGo,DEL (Delhi),HYD (Hyderabad),ATR 72,Overcast,10/28,1594.3,244.9,222.0,21.5,55.5
+6E-571,IndiGo,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Clear,11/29,1037.6,,213.0,22.7,13.4
+AI-332,Vistara,BLR (Bengaluru),DEL (Delhi),Boeing 737 MAX,Thunderstorm,10/28,880.7,142.0,71.0,29.3,60.4
+6E-791,Vistara,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Overcast,09R/27L,1164.0,154.3,176.0,21.6,18.1
+AI-212,Akasa Air,HYD (Hyderabad),DEL (Delhi),Airbus A320neo,Overcast,11/29,1300.7,187.6,129.0,27.5,21.4
+6E-929,Akasa Air,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,Clear,09R/27L,1547.0,226.0,149.0,27.0,53.1
+AI-596,Air India,DEL (Delhi),GOI (Goa),Airbus A320neo,Clear,10/28,1679.4,234.8,,25.9,0.3
+6E-541,SpiceJet,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Clear,10/28,956.1,138.1,210.0,18.2,29.5
+AI-663,Vistara,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Rain,09R/27L,569.6,89.3,222.0,32.4,48.6
+6E-367,Vistara,CCU (Kolkata),BLR (Bengaluru),Boeing 787 Dreamliner,Clear,09L/27R,934.6,147.5,213.0,38.3,0.0
+AI-609,IndiGo,DEL (Delhi),CCU (Kolkata),Boeing 737 MAX,Clear,10/28,1204.1,178.7,197.0,25.1,13.1
+6E-906,Air India,BOM (Mumbai),MAA (Chennai),Boeing 787 Dreamliner,Fog,09L/27R,714.5,92.9,67.0,18.7,50.3
+AI-485,IndiGo,CCU (Kolkata),BLR (Bengaluru),Airbus A320neo,Clear,10/28,,94.4,87.0,25.2,5.3
+6E-486,Akasa Air,HYD (Hyderabad),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,1237.5,178.9,200.0,30.9,74.4
+AI-212,Air India,MAA (Chennai),DEL (Delhi),Boeing 737 MAX,Clear,09L/27R,,168.6,158.0,21.3,22.1
+6E-712,IndiGo,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Overcast,09L/27R,1113.1,140.9,172.0,24.2,23.0
+AI-724,SpiceJet,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Thunderstorm,09R/27L,796.6,121.2,193.0,27.0,132.0
+6E-180,Air India,BOM (Mumbai),MAA (Chennai),Boeing 737 MAX,Clear,09L/27R,1007.8,149.1,198.0,32.2,15.8
+AI-798,IndiGo,HYD (Hyderabad),BOM (Mumbai),Airbus A320neo,Rain,09L/27R,730.3,131.3,153.0,29.7,47.0
+6E-212,IndiGo,MAA (Chennai),BOM (Mumbai),Boeing 737 MAX,Clear,09L/27R,1456.1,210.3,189.0,29.9,11.7
+AI-101,SpiceJet,BLR (Bengaluru),GOI (Goa),Boeing 737 MAX,Thunderstorm,10/28,1514.1,225.7,193.0,22.4,95.1
+6E-741,Air India,DEL (Delhi),GOI (Goa),Airbus A320neo,Rain,09L/27R,361.5,,130.0,27.4,32.1
+AI-319,SpiceJet,BLR (Bengaluru),MAA (Chennai),Airbus A320neo,Rain,10/28,728.2,95.8,136.0,20.7,72.0
+6E-665,Air India,CCU (Kolkata),BLR (Bengaluru),ATR 72,Clear,09L/27R,501.4,94.5,191.0,30.1,12.6
+AI-954,Vistara,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Fog,09L/27R,840.0,134.2,110.0,31.9,44.1
+6E-835,Air India,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Overcast,09R/27L,1066.6,167.3,95.0,28.3,29.2
+AI-324,Air India,BOM (Mumbai),DEL (Delhi),Boeing 787 Dreamliner,Clear,10/28,520.1,128.6,81.0,22.8,11.2
+6E-484,Vistara,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,Rain,09L/27R,731.3,96.7,64.0,23.8,38.4
+AI-502,Air India,CCU (Kolkata),MAA (Chennai),Boeing 737 MAX,Clear,10/28,698.4,130.4,93.0,35.8,6.4
+6E-737,IndiGo,BLR (Bengaluru),DEL (Delhi),Boeing 787 Dreamliner,Thunderstorm,10/28,1182.9,174.8,194.0,22.9,85.5
+AI-229,IndiGo,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,11/29,1127.7,173.2,218.0,31.3,5.1
+6E-152,SpiceJet,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Overcast,09R/27L,811.3,127.7,103.0,27.0,6.1
+AI-783,Air India,DEL (Delhi),BLR (Bengaluru),Airbus A320neo,Clear,09R/27L,1170.7,171.9,93.0,23.0,10.7
+6E-829,SpiceJet,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,09R/27L,881.3,131.8,147.0,16.9,9.6
+AI-771,IndiGo,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,11/29,991.3,155.5,54.0,26.3,4.9
+6E-809,IndiGo,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,1769.4,240.7,158.0,25.5,5.4
+AI-515,IndiGo,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Clear,09R/27L,1636.2,245.7,76.0,35.8,4.9
+6E-346,IndiGo,MAA (Chennai),BOM (Mumbai),Boeing 737 MAX,Clear,11/29,580.2,93.2,165.0,19.8,0.0
+AI-935,Air India,MAA (Chennai),GOI (Goa),Boeing 787 Dreamliner,Overcast,11/29,1431.9,199.6,136.0,38.8,18.3
+6E-538,IndiGo,CCU (Kolkata),MAA (Chennai),ATR 72,Clear,11/29,1424.6,205.4,153.0,27.3,36.6
+AI-302,Air India,DEL (Delhi),MAA (Chennai),Boeing 737 MAX,Clear,09R/27L,640.7,118.0,172.0,27.3,8.8
+6E-283,Vistara,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Overcast,09R/27L,,205.0,128.0,21.4,20.1
+AI-222,IndiGo,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,1715.2,252.3,,26.9,16.4
+6E-500,Air India,HYD (Hyderabad),DEL (Delhi),Boeing 737 MAX,Thunderstorm,11/29,651.0,99.5,146.0,27.8,69.9
+AI-866,SpiceJet,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Rain,09R/27L,733.0,125.3,80.0,30.6,47.3
+6E-393,IndiGo,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Overcast,11/29,1507.1,227.8,148.0,19.1,8.6
+AI-379,Air India,HYD (Hyderabad),DEL (Delhi),Airbus A321neo,Overcast,09L/27R,1208.6,199.6,66.0,33.4,16.2
+6E-936,Vistara,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Thunderstorm,11/29,1320.6,194.3,132.0,27.2,58.4
+AI-983,Vistara,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,10/28,1236.2,191.5,159.0,28.6,20.3
+6E-709,IndiGo,MAA (Chennai),DEL (Delhi),Airbus A320neo,Clear,09R/27L,1256.3,188.5,81.0,23.7,23.1
+AI-297,Vistara,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,09R/27L,569.4,,217.0,19.4,1.4
+6E-610,Air India,CCU (Kolkata),DEL (Delhi),ATR 72,Rain,10/28,1518.9,215.3,190.0,25.4,39.4
+AI-851,IndiGo,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,11/29,1567.8,236.5,84.0,26.1,69.5
+6E-243,Air India,BOM (Mumbai),MAA (Chennai),ATR 72,Overcast,09L/27R,1008.2,152.5,182.0,16.7,23.7
+AI-708,Akasa Air,DEL (Delhi),GOI (Goa),Airbus A320neo,Fog,10/28,1082.6,163.7,78.0,29.8,55.2
+6E-300,Air India,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Rain,10/28,487.6,85.9,119.0,31.0,64.5
+AI-223,IndiGo,BOM (Mumbai),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,1305.7,196.6,,20.6,25.5
+6E-286,Air India,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,1328.8,196.0,144.0,18.9,22.5
+AI-425,IndiGo,DEL (Delhi),MAA (Chennai),Airbus A320neo,Rain,11/29,1075.1,165.5,71.0,23.2,46.9
+6E-563,IndiGo,DEL (Delhi),GOI (Goa),ATR 72,Overcast,10/28,1549.7,242.4,222.0,25.1,40.0
+AI-448,IndiGo,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,10/28,966.4,158.7,118.0,23.4,7.9
+6E-870,IndiGo,DEL (Delhi),MAA (Chennai),Boeing 737 MAX,Clear,09R/27L,1325.8,205.5,138.0,,12.3
+AI-759,IndiGo,DEL (Delhi),GOI (Goa),Airbus A320neo,Thunderstorm,09R/27L,692.1,107.7,121.0,26.3,68.8
+6E-863,IndiGo,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Overcast,09R/27L,1090.6,156.5,178.0,16.8,73.0
+AI-502,Air India,BLR (Bengaluru),MAA (Chennai),Airbus A320neo,,11/29,1030.3,166.9,221.0,17.5,46.0
+6E-445,IndiGo,BOM (Mumbai),GOI (Goa),Boeing 787 Dreamliner,Thunderstorm,09R/27L,1190.1,187.4,136.0,10.0,68.4
+AI-610,IndiGo,DEL (Delhi),BOM (Mumbai),ATR 72,Overcast,10/28,952.2,161.7,145.0,30.7,39.2
+6E-246,Vistara,BLR (Bengaluru),GOI (Goa),Boeing 787 Dreamliner,Clear,10/28,1047.4,153.6,124.0,25.1,16.4
+AI-247,Air India,BLR (Bengaluru),BOM (Mumbai),Boeing 737 MAX,Clear,09L/27R,1430.4,208.4,216.0,31.3,2.4
+6E-963,SpiceJet,BOM (Mumbai),GOI (Goa),Airbus A320neo,Clear,11/29,925.3,127.0,103.0,18.2,23.0
+AI-810,IndiGo,CCU (Kolkata),GOI (Goa),Boeing 737 MAX,Clear,09L/27R,457.4,77.1,137.0,25.1,2.3
+6E-919,IndiGo,HYD (Hyderabad),BLR (Bengaluru),Boeing 737 MAX,Rain,10/28,1799.8,269.9,206.0,26.3,57.0
+AI-588,IndiGo,HYD (Hyderabad),DEL (Delhi),ATR 72,Overcast,09L/27R,1652.6,235.7,103.0,21.6,18.3
+6E-739,IndiGo,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Thunderstorm,10/28,583.1,104.2,65.0,15.7,87.9
+AI-650,IndiGo,MAA (Chennai),CCU (Kolkata),Boeing 737 MAX,Clear,09L/27R,1375.9,201.5,148.0,35.5,11.3
+6E-437,IndiGo,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Overcast,09R/27L,898.8,143.1,69.0,33.4,1.6
+AI-971,IndiGo,BOM (Mumbai),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,1205.4,169.2,95.0,22.7,75.0
+6E-740,IndiGo,HYD (Hyderabad),MAA (Chennai),Boeing 737 MAX,Overcast,09R/27L,1217.7,183.2,176.0,28.1,11.7
+AI-878,Air India,BLR (Bengaluru),DEL (Delhi),Boeing 737 MAX,Overcast,09R/27L,1006.2,124.2,107.0,22.1,11.3
+6E-572,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Clear,11/29,786.5,123.0,160.0,19.0,10.1
+AI-250,IndiGo,HYD (Hyderabad),DEL (Delhi),Airbus A320neo,Clear,09R/27L,823.8,113.5,178.0,36.0,40.3
+6E-514,Air India,BLR (Bengaluru),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,733.5,,130.0,15.1,3.7
+AI-397,SpiceJet,BLR (Bengaluru),GOI (Goa),ATR 72,Clear,09L/27R,767.3,130.1,206.0,23.3,5.9
+6E-710,IndiGo,DEL (Delhi),GOI (Goa),Airbus A321neo,Clear,10/28,1073.1,,133.0,25.5,0.0
+AI-362,SpiceJet,CCU (Kolkata),BOM (Mumbai),Boeing 787 Dreamliner,Overcast,11/29,813.7,143.7,119.0,34.9,22.7
+6E-863,Air India,DEL (Delhi),HYD (Hyderabad),ATR 72,Fog,09R/27L,1372.8,193.6,57.0,,71.1
+AI-243,IndiGo,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Overcast,11/29,1694.9,263.5,78.0,15.0,16.5
+6E-445,Vistara,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Overcast,09L/27R,868.0,145.1,161.0,25.0,17.9
+AI-723,Vistara,DEL (Delhi),MAA (Chennai),Airbus A320neo,,09R/27L,1195.8,177.1,228.0,25.1,0.3
+6E-671,IndiGo,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Overcast,09L/27R,1299.9,204.7,210.0,23.6,20.6
+AI-980,IndiGo,MAA (Chennai),HYD (Hyderabad),ATR 72,Clear,11/29,1288.8,180.8,180.0,28.7,48.6
+6E-101,Vistara,BLR (Bengaluru),GOI (Goa),Airbus A320neo,Clear,09L/27R,1130.4,162.5,212.0,16.5,10.9
+AI-996,SpiceJet,CCU (Kolkata),BLR (Bengaluru),Airbus A321neo,Clear,11/29,1397.1,200.2,157.0,22.5,76.9
+6E-403,IndiGo,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,09L/27R,1292.9,187.1,158.0,27.9,5.2
+AI-353,IndiGo,CCU (Kolkata),GOI (Goa),Boeing 737 MAX,Clear,11/29,604.9,90.1,69.0,,5.6
+6E-751,IndiGo,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1447.7,225.3,122.0,,43.1
+AI-552,Air India,MAA (Chennai),HYD (Hyderabad),Airbus A321neo,Clear,09L/27R,1454.9,211.4,216.0,23.3,4.5
+6E-136,Air India,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Fog,09L/27R,794.7,129.5,,24.3,65.7
+AI-259,IndiGo,BOM (Mumbai),MAA (Chennai),Boeing 737 MAX,Clear,10/28,1115.2,163.0,68.0,29.4,80.1
+6E-108,Air India,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,10/28,1373.3,184.9,151.0,25.2,3.9
+AI-332,SpiceJet,HYD (Hyderabad),MAA (Chennai),Boeing 737 MAX,Clear,09L/27R,1016.3,158.2,222.0,18.7,0.0
+6E-198,IndiGo,BLR (Bengaluru),BOM (Mumbai),Airbus A320neo,Overcast,10/28,1529.2,204.8,220.0,17.6,25.0
+AI-758,IndiGo,BOM (Mumbai),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,2045.5,292.0,190.0,16.1,15.7
+6E-915,SpiceJet,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Clear,11/29,785.6,111.1,190.0,33.7,0.0
+AI-307,Vistara,CCU (Kolkata),GOI (Goa),Boeing 737 MAX,Clear,11/29,547.6,112.9,135.0,29.8,0.4
+6E-230,Air India,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Clear,11/29,1221.5,192.0,101.0,24.4,0.0
+AI-503,Air India,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,,09R/27L,1388.6,206.2,160.0,22.3,33.4
+6E-251,IndiGo,DEL (Delhi),BOM (Mumbai),Boeing 737 MAX,Clear,10/28,1007.7,167.0,158.0,21.6,2.6
+AI-153,Air India,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Clear,10/28,1681.3,235.7,135.0,31.6,12.2
+6E-219,Air India,CCU (Kolkata),BLR (Bengaluru),Airbus A320neo,Clear,09L/27R,564.6,100.7,92.0,36.4,30.6
+AI-772,IndiGo,MAA (Chennai),BOM (Mumbai),Airbus A320neo,Clear,10/28,1377.2,205.6,91.0,21.4,7.1
+6E-727,IndiGo,BOM (Mumbai),MAA (Chennai),Boeing 787 Dreamliner,Rain,09L/27R,857.7,137.0,139.0,31.8,34.2
+AI-686,IndiGo,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Overcast,09R/27L,1787.8,,164.0,25.2,30.6
+6E-724,IndiGo,CCU (Kolkata),GOI (Goa),Airbus A320neo,Clear,11/29,1897.0,280.3,,23.7,0.0
+AI-519,IndiGo,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Clear,11/29,793.3,128.7,200.0,34.0,39.0
+6E-521,IndiGo,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Thunderstorm,11/29,880.2,120.8,92.0,24.9,99.5
+AI-203,IndiGo,BOM (Mumbai),DEL (Delhi),ATR 72,Clear,10/28,1443.8,202.9,126.0,26.8,3.3
+6E-951,IndiGo,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Clear,09L/27R,945.1,144.8,205.0,26.5,15.2
+AI-353,Vistara,CCU (Kolkata),BLR (Bengaluru),Airbus A320neo,Overcast,09L/27R,1081.8,165.2,186.0,15.2,15.8
+6E-326,Air India,BOM (Mumbai),GOI (Goa),Airbus A320neo,Clear,09R/27L,1110.2,156.7,,26.7,10.7
+AI-211,SpiceJet,MAA (Chennai),BLR (Bengaluru),Airbus A320neo,Clear,10/28,332.1,88.4,88.0,21.6,38.6
+6E-609,SpiceJet,HYD (Hyderabad),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,1094.5,,228.0,16.5,51.5
+AI-572,Air India,BLR (Bengaluru),MAA (Chennai),ATR 72,Thunderstorm,09L/27R,824.1,135.9,61.0,21.9,70.1
+6E-198,IndiGo,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,902.8,141.1,60.0,21.8,11.8
+AI-252,Air India,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Overcast,11/29,1677.5,241.5,203.0,31.2,52.7
+6E-960,Air India,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Fog,10/28,597.4,90.1,91.0,18.6,99.9
+AI-995,SpiceJet,DEL (Delhi),GOI (Goa),Boeing 787 Dreamliner,Clear,09L/27R,1425.3,210.8,204.0,20.3,11.6
+6E-977,Air India,MAA (Chennai),CCU (Kolkata),Airbus A320neo,Clear,11/29,988.4,154.4,60.0,26.4,6.3
+AI-437,IndiGo,BLR (Bengaluru),GOI (Goa),ATR 72,,10/28,988.1,,87.0,17.0,16.4
+6E-805,IndiGo,HYD (Hyderabad),BLR (Bengaluru),Boeing 737 MAX,Clear,09R/27L,1416.1,212.2,147.0,21.0,54.0
+AI-921,IndiGo,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Clear,10/28,1236.0,183.2,220.0,15.0,6.2
+6E-262,Air India,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Thunderstorm,10/28,1328.2,178.0,68.0,30.5,74.0
+AI-819,Air India,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Overcast,09L/27R,1487.3,209.7,183.0,23.2,5.2
+6E-780,IndiGo,BLR (Bengaluru),BOM (Mumbai),Boeing 737 MAX,Overcast,09L/27R,967.5,144.9,223.0,24.9,11.9
+AI-260,Akasa Air,CCU (Kolkata),BLR (Bengaluru),ATR 72,Clear,10/28,855.1,152.9,165.0,30.5,11.3
+6E-679,Air India,BLR (Bengaluru),MAA (Chennai),Boeing 737 MAX,Rain,09L/27R,665.9,114.4,162.0,20.7,148.7
+AI-900,IndiGo,BOM (Mumbai),CCU (Kolkata),Boeing 737 MAX,Fog,09L/27R,769.8,109.3,219.0,23.1,32.9
+6E-497,IndiGo,HYD (Hyderabad),DEL (Delhi),Airbus A320neo,Rain,09L/27R,2279.6,328.8,114.0,18.7,34.4
+AI-376,IndiGo,DEL (Delhi),BLR (Bengaluru),Boeing 787 Dreamliner,Clear,11/29,1597.9,217.6,,18.6,6.3
+6E-915,IndiGo,HYD (Hyderabad),BLR (Bengaluru),ATR 72,Overcast,11/29,559.6,105.4,121.0,19.5,3.4
+AI-603,IndiGo,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,Clear,10/28,571.0,91.4,101.0,22.0,11.4
+6E-995,IndiGo,MAA (Chennai),BOM (Mumbai),Boeing 787 Dreamliner,Clear,09L/27R,1292.7,191.4,167.0,22.7,6.6
+AI-491,IndiGo,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Clear,11/29,1318.9,209.1,224.0,26.7,9.0
+6E-234,IndiGo,CCU (Kolkata),BLR (Bengaluru),Boeing 737 MAX,Overcast,10/28,1319.6,183.1,169.0,19.7,16.5
+AI-294,Vistara,BOM (Mumbai),CCU (Kolkata),Boeing 737 MAX,Overcast,09L/27R,998.0,139.1,56.0,26.9,10.3
+6E-500,IndiGo,DEL (Delhi),CCU (Kolkata),ATR 72,Clear,09R/27L,1049.8,154.1,60.0,27.9,11.7
+AI-739,Air India,CCU (Kolkata),MAA (Chennai),Boeing 737 MAX,Clear,09L/27R,1231.2,194.5,152.0,22.2,69.0
+6E-132,Air India,BOM (Mumbai),GOI (Goa),Airbus A320neo,Clear,09L/27R,1134.4,156.1,110.0,20.2,46.2
+AI-787,Akasa Air,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Clear,11/29,300.0,45.0,117.0,25.5,3.4
+6E-559,IndiGo,MAA (Chennai),DEL (Delhi),Airbus A321neo,,10/28,1008.1,149.9,202.0,23.8,19.7
+AI-982,IndiGo,BOM (Mumbai),GOI (Goa),Airbus A320neo,Clear,10/28,759.4,126.8,189.0,26.3,48.9
+6E-569,Akasa Air,BLR (Bengaluru),HYD (Hyderabad),Airbus A320neo,Rain,11/29,1170.1,188.0,203.0,,21.7
+AI-474,Vistara,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Clear,09L/27R,2294.1,321.2,151.0,25.4,26.2
+6E-121,Vistara,BOM (Mumbai),MAA (Chennai),Airbus A320neo,Clear,09R/27L,1247.0,182.2,159.0,21.2,50.1
+AI-849,IndiGo,MAA (Chennai),CCU (Kolkata),Boeing 737 MAX,Clear,09L/27R,974.6,161.5,189.0,19.7,0.0
+6E-769,IndiGo,BLR (Bengaluru),GOI (Goa),Airbus A321neo,Thunderstorm,09L/27R,1468.7,197.1,220.0,19.9,56.8
+AI-137,SpiceJet,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Overcast,09R/27L,1293.1,188.5,100.0,16.2,57.0
+6E-329,Vistara,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,Overcast,11/29,1268.0,191.0,166.0,30.6,17.4
+AI-464,Air India,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Clear,10/28,1342.7,203.5,214.0,11.6,1.6
+6E-662,Air India,BLR (Bengaluru),CCU (Kolkata),Airbus A321neo,Overcast,11/29,,271.2,95.0,27.9,12.5
+AI-537,IndiGo,BLR (Bengaluru),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,647.6,106.7,102.0,19.8,8.2
+6E-875,SpiceJet,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Overcast,09L/27R,1289.5,167.1,137.0,21.9,23.8
+AI-382,IndiGo,HYD (Hyderabad),BOM (Mumbai),ATR 72,Thunderstorm,10/28,729.4,110.7,170.0,19.6,84.4
+6E-126,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A321neo,Overcast,10/28,1322.2,200.8,62.0,33.7,94.5
+AI-325,Air India,MAA (Chennai),HYD (Hyderabad),ATR 72,Thunderstorm,11/29,732.5,107.8,138.0,25.1,70.9
+6E-376,Air India,DEL (Delhi),HYD (Hyderabad),Airbus A321neo,Overcast,09R/27L,933.1,145.0,174.0,29.7,25.3
+AI-897,IndiGo,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Clear,11/29,982.0,155.4,167.0,32.8,10.6
+6E-708,IndiGo,MAA (Chennai),DEL (Delhi),ATR 72,Thunderstorm,09R/27L,1490.3,215.3,103.0,26.0,67.4
+AI-383,Air India,CCU (Kolkata),BLR (Bengaluru),Boeing 737 MAX,Clear,10/28,1467.4,217.4,165.0,17.8,9.6
+6E-978,IndiGo,HYD (Hyderabad),DEL (Delhi),ATR 72,Clear,11/29,,90.6,167.0,23.7,67.6
+AI-580,Air India,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Clear,09L/27R,1122.0,167.5,53.0,20.5,37.5
+6E-552,IndiGo,HYD (Hyderabad),BOM (Mumbai),ATR 72,Clear,11/29,816.2,134.9,124.0,22.0,12.0
+AI-928,Air India,DEL (Delhi),CCU (Kolkata),Boeing 737 MAX,Clear,10/28,596.6,101.1,98.0,24.4,24.4
+6E-915,Air India,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,1013.2,149.2,56.0,24.2,7.1
+AI-758,IndiGo,MAA (Chennai),HYD (Hyderabad),Boeing 737 MAX,Clear,09L/27R,976.6,152.5,159.0,27.5,16.9
+6E-615,IndiGo,DEL (Delhi),BOM (Mumbai),Boeing 787 Dreamliner,Overcast,09R/27L,2070.7,,171.0,28.3,29.2
+AI-646,IndiGo,HYD (Hyderabad),GOI (Goa),Airbus A321neo,Clear,09L/27R,1273.2,169.3,60.0,24.2,10.3
+6E-291,IndiGo,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Clear,09L/27R,549.0,104.8,141.0,27.4,81.1
+AI-148,Akasa Air,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Overcast,11/29,874.1,133.2,222.0,21.7,25.9
+6E-611,IndiGo,MAA (Chennai),GOI (Goa),Airbus A320neo,Clear,10/28,1508.6,225.4,72.0,32.9,9.0
+AI-116,Vistara,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Overcast,09R/27L,1935.4,290.0,77.0,21.6,25.7
+6E-271,IndiGo,BLR (Bengaluru),BOM (Mumbai),ATR 72,Overcast,11/29,465.6,68.4,160.0,32.2,17.7
+AI-319,SpiceJet,CCU (Kolkata),BLR (Bengaluru),Airbus A320neo,Rain,09L/27R,348.0,59.3,106.0,16.1,38.6
+6E-257,SpiceJet,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Overcast,09L/27R,1848.4,263.6,75.0,22.7,12.9
+AI-576,Air India,MAA (Chennai),BOM (Mumbai),ATR 72,Clear,09R/27L,1255.8,179.6,202.0,23.0,8.8
+6E-145,Air India,BOM (Mumbai),MAA (Chennai),Boeing 737 MAX,Overcast,10/28,752.7,137.7,103.0,26.7,33.4
+AI-472,Air India,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,1313.9,,78.0,30.2,14.5
+6E-617,IndiGo,BOM (Mumbai),HYD (Hyderabad),Boeing 737 MAX,Clear,11/29,300.0,54.4,146.0,17.5,18.3
+AI-198,Vistara,MAA (Chennai),BLR (Bengaluru),Boeing 737 MAX,Rain,09R/27L,1101.4,168.9,213.0,18.4,51.0
+6E-991,Vistara,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Clear,09L/27R,1231.1,172.1,,16.6,3.6
+AI-844,Akasa Air,DEL (Delhi),BOM (Mumbai),Boeing 737 MAX,Rain,11/29,1469.7,,127.0,32.9,54.9
+6E-136,IndiGo,DEL (Delhi),CCU (Kolkata),Boeing 737 MAX,Rain,09L/27R,,115.8,84.0,26.8,30.1
+AI-379,SpiceJet,CCU (Kolkata),GOI (Goa),Airbus A321neo,Rain,10/28,,167.9,79.0,18.5,39.6
+6E-448,Vistara,MAA (Chennai),DEL (Delhi),Boeing 737 MAX,Thunderstorm,09L/27R,729.8,116.4,141.0,22.3,72.2
+AI-596,IndiGo,DEL (Delhi),BLR (Bengaluru),ATR 72,Clear,09L/27R,1202.2,175.0,66.0,32.1,13.4
+6E-401,IndiGo,DEL (Delhi),BOM (Mumbai),Airbus A320neo,Clear,09R/27L,741.9,103.8,207.0,23.3,2.2
+AI-280,SpiceJet,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Overcast,09L/27R,936.8,148.1,142.0,23.0,19.0
+6E-706,Air India,HYD (Hyderabad),MAA (Chennai),Airbus A320neo,Clear,11/29,701.7,131.1,222.0,20.3,13.6
+AI-198,Vistara,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Overcast,11/29,1360.5,201.6,128.0,18.9,15.0
+6E-799,IndiGo,BLR (Bengaluru),BOM (Mumbai),Boeing 737 MAX,Overcast,10/28,1443.4,214.7,159.0,32.1,61.0
+AI-215,SpiceJet,BOM (Mumbai),HYD (Hyderabad),Boeing 787 Dreamliner,Overcast,11/29,1006.2,,228.0,35.0,22.0
+6E-290,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Clear,09R/27L,1115.3,156.0,151.0,19.1,35.9
+AI-352,IndiGo,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Clear,10/28,520.6,106.4,155.0,33.4,5.5
+6E-260,IndiGo,CCU (Kolkata),BOM (Mumbai),ATR 72,Clear,11/29,980.1,152.7,96.0,22.1,16.1
+AI-355,Vistara,BLR (Bengaluru),GOI (Goa),Airbus A320neo,Clear,09R/27L,,180.3,113.0,28.2,33.2
+6E-422,SpiceJet,HYD (Hyderabad),CCU (Kolkata),Boeing 737 MAX,Thunderstorm,11/29,2148.3,299.1,215.0,33.5,79.6
+AI-227,Air India,MAA (Chennai),CCU (Kolkata),Boeing 737 MAX,Clear,11/29,655.2,125.5,113.0,24.1,19.7
+6E-117,IndiGo,MAA (Chennai),CCU (Kolkata),Boeing 737 MAX,Clear,09L/27R,1685.7,252.5,136.0,23.0,0.0
+AI-892,Vistara,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Clear,11/29,1498.7,225.4,56.0,29.8,2.4
+6E-834,IndiGo,MAA (Chennai),DEL (Delhi),Airbus A320neo,Overcast,11/29,,184.0,71.0,18.3,13.3
+AI-665,Vistara,CCU (Kolkata),MAA (Chennai),ATR 72,Overcast,09R/27L,1803.4,258.0,130.0,31.9,15.9
+6E-669,Air India,BOM (Mumbai),MAA (Chennai),Boeing 737 MAX,,09R/27L,1248.8,198.5,218.0,25.9,46.3
+AI-422,IndiGo,DEL (Delhi),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,1255.7,188.8,123.0,21.5,15.2
+6E-971,Air India,HYD (Hyderabad),CCU (Kolkata),ATR 72,Clear,11/29,1078.8,144.2,187.0,21.4,60.4
+AI-785,IndiGo,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Clear,09L/27R,1589.4,220.7,184.0,16.7,53.0
+6E-891,SpiceJet,BLR (Bengaluru),MAA (Chennai),Boeing 737 MAX,Overcast,11/29,1538.6,223.3,174.0,21.8,13.0
+AI-725,Air India,HYD (Hyderabad),GOI (Goa),Airbus A320neo,Overcast,10/28,849.7,136.4,99.0,23.4,10.8
+6E-387,IndiGo,CCU (Kolkata),DEL (Delhi),Boeing 787 Dreamliner,Clear,10/28,572.3,95.7,101.0,18.6,42.6
+AI-953,Vistara,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,1018.8,168.0,210.0,24.7,57.9
+6E-762,IndiGo,CCU (Kolkata),BOM (Mumbai),Airbus A320neo,Fog,09L/27R,780.0,104.5,50.0,27.8,56.8
+AI-738,Air India,BLR (Bengaluru),GOI (Goa),Airbus A320neo,Clear,09L/27R,1074.6,164.7,211.0,23.7,2.9
+6E-254,Vistara,CCU (Kolkata),MAA (Chennai),Airbus A320neo,Overcast,09R/27L,1595.0,,53.0,29.0,24.4
+AI-589,Air India,MAA (Chennai),DEL (Delhi),Airbus A321neo,Clear,09R/27L,917.1,149.9,194.0,20.2,18.0
+6E-485,IndiGo,BOM (Mumbai),BLR (Bengaluru),Boeing 787 Dreamliner,Clear,09R/27L,1082.9,163.4,181.0,31.0,9.1
+AI-884,Vistara,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,09L/27R,1123.2,,220.0,25.7,17.7
+6E-203,Air India,BOM (Mumbai),DEL (Delhi),Airbus A320neo,Clear,11/29,1439.4,203.3,53.0,34.3,4.9
+AI-492,IndiGo,DEL (Delhi),HYD (Hyderabad),Boeing 737 MAX,Fog,10/28,300.0,72.8,50.0,39.5,41.1
+6E-910,IndiGo,BOM (Mumbai),DEL (Delhi),Airbus A321neo,Clear,09L/27R,857.3,144.7,120.0,22.2,10.1
+AI-345,SpiceJet,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Clear,09R/27L,1184.5,183.8,227.0,22.4,13.0
+6E-275,Air India,DEL (Delhi),CCU (Kolkata),Airbus A320neo,Clear,09R/27L,1580.0,229.4,84.0,23.5,5.8
+AI-138,Air India,BOM (Mumbai),CCU (Kolkata),Airbus A320neo,Clear,09L/27R,903.2,146.2,57.0,28.6,7.0
+6E-576,Vistara,BLR (Bengaluru),GOI (Goa),Boeing 737 MAX,Clear,09L/27R,349.4,59.5,201.0,33.0,9.4
+AI-781,SpiceJet,MAA (Chennai),DEL (Delhi),Airbus A320neo,Clear,09R/27L,1347.9,208.3,85.0,21.1,0.0
+6E-858,IndiGo,CCU (Kolkata),HYD (Hyderabad),Boeing 737 MAX,Rain,11/29,845.9,149.3,227.0,27.3,29.6
+AI-637,IndiGo,CCU (Kolkata),HYD (Hyderabad),Airbus A320neo,,09R/27L,624.1,113.9,172.0,24.2,67.7
+6E-966,IndiGo,MAA (Chennai),CCU (Kolkata),ATR 72,Clear,09R/27L,850.3,126.1,92.0,28.7,16.3
+AI-917,SpiceJet,DEL (Delhi),GOI (Goa),Airbus A320neo,Thunderstorm,09L/27R,,160.4,76.0,34.1,70.7
+6E-507,IndiGo,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,11/29,858.1,,81.0,23.6,15.6
+AI-624,Air India,BLR (Bengaluru),GOI (Goa),Boeing 737 MAX,Fog,09R/27L,300.0,65.7,127.0,15.0,122.4
+6E-927,SpiceJet,HYD (Hyderabad),BLR (Bengaluru),Boeing 737 MAX,Clear,09R/27L,1458.8,219.0,170.0,29.5,5.2
+AI-605,Vistara,BOM (Mumbai),GOI (Goa),Airbus A320neo,Thunderstorm,10/28,1610.0,216.0,195.0,20.0,83.8
+6E-924,IndiGo,DEL (Delhi),BLR (Bengaluru),Boeing 737 MAX,Overcast,09L/27R,1360.6,189.8,205.0,24.1,33.0
+AI-135,Vistara,CCU (Kolkata),MAA (Chennai),Boeing 737 MAX,Rain,10/28,644.9,103.2,206.0,29.7,40.2
+6E-784,IndiGo,BLR (Bengaluru),MAA (Chennai),Boeing 737 MAX,Fog,10/28,1019.4,152.9,65.0,26.8,30.3
+AI-119,Vistara,BOM (Mumbai),CCU (Kolkata),Boeing 737 MAX,Clear,09R/27L,1097.4,154.2,148.0,24.4,16.2
+6E-420,IndiGo,BLR (Bengaluru),CCU (Kolkata),Boeing 737 MAX,Fog,09L/27R,1339.5,202.5,96.0,21.5,52.2
+AI-875,IndiGo,BOM (Mumbai),MAA (Chennai),ATR 72,Clear,11/29,1367.3,,80.0,10.0,16.2
+6E-611,SpiceJet,BOM (Mumbai),HYD (Hyderabad),Airbus A320neo,Clear,09R/27L,,125.6,53.0,,22.5
+AI-499,IndiGo,MAA (Chennai),CCU (Kolkata),ATR 72,Clear,11/29,1132.8,163.5,214.0,23.5,10.1
+6E-753,IndiGo,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,11/29,1282.9,201.5,66.0,34.1,32.7
+AI-982,SpiceJet,BLR (Bengaluru),DEL (Delhi),Airbus A320neo,Clear,09L/27R,1682.3,260.9,88.0,27.4,0.0
+6E-570,SpiceJet,BLR (Bengaluru),CCU (Kolkata),Airbus A320neo,Overcast,10/28,,199.4,97.0,21.8,30.9
+AI-242,Air India,MAA (Chennai),HYD (Hyderabad),Airbus A320neo,Clear,09L/27R,1415.6,202.6,223.0,31.4,13.2
+6E-191,SpiceJet,CCU (Kolkata),BLR (Bengaluru),ATR 72,Rain,11/29,1133.5,176.0,225.0,31.9,29.1
+AI-453,Air India,CCU (Kolkata),HYD (Hyderabad),Boeing 737 MAX,Rain,09R/27L,1664.2,238.3,88.0,23.7,34.9
+6E-933,IndiGo,DEL (Delhi),MAA (Chennai),ATR 72,Clear,11/29,1263.9,187.1,181.0,32.2,51.5
+AI-899,IndiGo,DEL (Delhi),GOI (Goa),Boeing 737 MAX,Clear,09R/27L,755.6,128.1,79.0,21.7,0.0
