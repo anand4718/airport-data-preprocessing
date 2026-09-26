@@ -1,17 +1,19 @@
-# AI Pioneers Internship - Airport Operations & Flight Delay Analytics
+# AI Pioneers Internship - Airport Operations & Flight Analytics Pipeline
 **Program:** AI Pioneers Internship (Yuva Intern / NSDC)  
-**Domain:** Aviation Operations, Flight Logistics & Predictive Machine Learning  
+**Domain:** Aviation Logistics, Flight Delay Analytics & Applied Machine Learning  
 
 ---
 
 ## 📂 Repository Structure
 ```text
 ├── airport_operations_dataset.csv               # Raw airport operations dataset (500 records)
-├── cleaned_airport_dataset.csv                 # Cleaned & ML-ready preprocessed dataset
-├── airport_preprocessing.py                     # Week 1: Data Preprocessing & EDA Pipeline
-├── supervised_learning.py                       # Week 2: Supervised Learning Models (Reg & Clf)
+├── cleaned_airport_dataset.csv                 # Cleaned & preprocessed ML-ready dataset
+├── airport_preprocessing.py                     # Week 1: Data Cleaning, Imputation & Scaling Pipeline
+├── supervised_learning.py                       # Week 2: Supervised Learning (Regression & Classification)
+├── unsupervised_and_evaluation.py               # Week 3: Unsupervised Clustering & Advanced Evaluation
 ├── Week_1_Airport_Data_Preprocessing_Report.docx # Week 1 Submission Report (.docx)
 ├── Week_2_Supervised_Learning_Report.docx       # Week 2 Submission Report (.docx)
+├── Week_3_Unsupervised_Learning_Report.docx     # Week 3 Submission Report (.docx)
 ├── plots/                                       # Visualizations & Evaluation Charts
 │   ├── eda_missing_data.png                     # Missing value diagnostics
 │   ├── eda_weather_delays.png                   # Delay distribution across weather
@@ -21,64 +23,77 @@
 │   ├── model_classification_comparison.png      # Accuracy, Precision, Recall, F1 comparison
 │   ├── classification_confusion_matrices.png    # 2x2 grid of confusion matrices
 │   ├── roc_curves_comparison.png                # ROC-AUC curves for all classifiers
-│   └── feature_importance_rf.png                # Top 10 Random Forest feature importances
+│   ├── feature_importance_rf.png                # Top 10 Random Forest feature importances
+│   ├── kmeans_elbow_silhouette.png              # Elbow method and Silhouette coefficient curves
+│   ├── pca_clusters_visualization.png           # 2D PCA projection of flight operational clusters
+│   ├── hierarchical_dendrogram.png              # Hierarchical Ward linkage dendrogram
+│   ├── kfold_cross_validation_comparison.png    # 5-Fold Stratified CV benchmark comparison
+│   └── hyperparameter_tuning_comparison.png    # Baseline vs Tuned Random Forest comparison
 └── README.md                                    # Comprehensive project documentation
 ```
 
 ---
 
-## 🚀 Week 1: Data Preprocessing & EDA Pipeline
-- **Dataset:** 500 commercial flight records across major Indian hubs (DEL, BOM, BLR, HYD, MAA, CCU).
-- **Imputation:** Median for continuous skewed variables, Mean for Gaussian baggage turnaround, Mode for categorical weather attributes.
-- **Outlier Treatment:** Interquartile Range (**IQR**) capping for extreme departure delays.
-- **Feature Engineering:** Derived `Calculated_Speed_kmh` and binary target `Is_Delayed_30Min`.
-- **Encoding & Normalization:** One-Hot Encoding (`drop_first=True`) and `StandardScaler` ($z = \frac{x - \mu}{\sigma}$).
+## 🚀 Overview of Weekly Milestones
+
+### 🔹 Week 1: Python for ML & Data Preprocessing
+- **Data Ingestion & Cleaning:** Handled missing flight durations, cruising distances, and weather conditions via median, mean, and mode imputation.
+- **Outlier Capping:** Applied Interquartile Range (**IQR**) capping on departure delays.
+- **Feature Engineering & Scaling:** Synthesized `Calculated_Speed_kmh`, one-hot encoded nominal categories, and standardized features via `StandardScaler`.
+
+### 🔹 Week 2: Supervised Machine Learning Models
+- **Regression (Delay Minutes):** Trained Linear Regression, Decision Tree, Random Forest, and KNN. Decision Tree & Linear Regression achieved **MAE of ~14.0 mins** and **$R^2 \approx 0.43$**.
+- **Classification (Severe Delay > 30m):** Trained Logistic Regression (**83.0% Accuracy, 92.0% Precision**), Random Forest (**82.0% Accuracy**), Decision Tree (**79.0%**), and KNN (**64.0%**).
+
+### 🔹 Week 3: Unsupervised Learning & Model Evaluation
+- **Dimensionality Reduction:** Computed **Principal Component Analysis (PCA)** to extract principal axes of variance for 2D visualization.
+- **K-Means Clustering:** Evaluated cluster range $k \in [2, 6]$ using the **Elbow Method (Inertia)** and **Silhouette Coefficient**, establishing $k = 3$ as optimal.
+- **Hierarchical Clustering:** Built an agglomerative **Dendrogram** with Ward linkage, confirming 3 operational flight segments.
+- **5-Fold Stratified Cross-Validation:** Validated model generalization across 5 folds (Logistic Regression: **81.6% ± 1.6%**, Random Forest: **81.4% ± 2.2%**).
+- **Hyperparameter Optimization:** Executed **GridSearchCV** over 54 parameter combinations for Random Forest, achieving **91.67% test precision** and **0.753 ROC-AUC**.
 
 ---
 
-## 🤖 Week 2: Supervised Machine Learning Models
+## 📊 Summary of Week 3 Benchmark Results
 
-### 1. Regression Models (Predicting Delay in Minutes)
-Target: Continuous departure delay (`Departure_Delay_min_capped`)
+### 1. K-Means Operational Flight Clusters ($k=3$)
+| Cluster | Profile | Flight Count | Avg Distance | Avg Duration | Avg Delay | Severe Delay Rate |
+| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
+| **0** | Medium-Haul Regional | 154 | 1,220 km | 182 min | 28.3 min | 34.0% |
+| **1** | Long-Haul Heavy Trunk | 172 | 1,423 km | 209 min | 27.5 min | 38.0% |
+| **2** | Weather-Disrupted Short Hub | 174 | 714 km | 114 min | 31.6 min | **42.0%** |
 
-| Model Architecture | MAE (min) | MSE | RMSE (min) | $R^2$ Score |
+### 2. 5-Fold Stratified Cross-Validation Benchmark
+| Classifier | Mean CV Accuracy (%) | Standard Deviation (±%) | Mean CV F1-Score (%) | Mean CV ROC-AUC |
 | :--- | :---: | :---: | :---: | :---: |
-| **Decision Tree Regressor** | **13.96** | **341.54** | **18.48** | **0.4298** |
-| **Linear Regression** | 14.02 | 343.63 | 18.54 | 0.4263 |
-| **Random Forest Regressor** | 14.09 | 347.98 | 18.65 | 0.4190 |
-| **KNN Regressor ($k=5$)** | 19.80 | 640.92 | 25.32 | -0.0700 |
-
-### 2. Classification Models (Predicting Delay > 30 mins)
-Target: Binary indicator (`Is_Delayed_30Min`)
-
-| Classifier | Accuracy (%) | Precision (%) | Recall (%) | F1-Score (%) | ROC-AUC |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | **83.00%** | **92.00%** | **60.53%** | **73.02%** | **0.7857** |
-| **Random Forest Classifier** | 82.00% | 91.67% | 57.89% | 70.97% | 0.7330 |
-| **Decision Tree Classifier** | 79.00% | 90.48% | 50.00% | 64.41% | 0.7912 |
-| **KNN Classifier ($k=5$)** | 64.00% | 55.00% | 28.95% | 37.93% | 0.6352 |
+| **Logistic Regression** | **81.60%** | **±1.62%** | **70.18%** | **0.7676** |
+| **Random Forest** | 81.40% | ±2.24% | 69.50% | 0.7274 |
+| **Decision Tree** | 80.60% | ±1.36% | 68.09% | 0.7593 |
+| **KNN ($k=5$)** | 62.20% | ±3.97% | 34.04% | 0.5877 |
 
 ---
 
 ## 🛠️ How to Execute
 
-### 1. Install Dependencies
+### 1. Setup Environment
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn python-docx
+pip install pandas numpy scikit-learn scipy matplotlib seaborn python-docx
 ```
 
-### 2. Run Preprocessing Pipeline (Week 1)
+### 2. Run All Pipelines
 ```bash
+# Week 1 Preprocessing
 python airport_preprocessing.py
-```
 
-### 3. Run Supervised Machine Learning Pipeline (Week 2)
-```bash
+# Week 2 Supervised Learning
 python supervised_learning.py
+
+# Week 3 Unsupervised Learning & Advanced Evaluation
+python unsupervised_and_evaluation.py
 ```
 
 ---
 
-## 👨‍💻 Author & Submission
+## 👨‍💻 Author & Repository Link
 - **Internship:** AI Pioneers Internship (Yuva Intern / NSDC)
-- **Repository:** [airport-data-preprocessing](https://github.com/anand4718/airport-data-preprocessing)
+- **Repository:** [https://github.com/anand4718/airport-data-preprocessing](https://github.com/anand4718/airport-data-preprocessing)
