@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroPredict - Airport Operations & Flight Delay AI System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #102C57;
+            --primary-light: #16407B;
+            --secondary: #0288D1;
+            --accent: #4CAF50;
+            --danger: #E53935;
+            --warning: #FB8C00;
+            --bg: #F4F7FB;
+            --card: #FFFFFF;
+            --text-dark: #1E293B;
+            --text-muted: #64748B;
+            --border: #E2E8F0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+        body { background-color: var(--bg); color: var(--text-dark); min-height: 100vh; display: flex; flex-direction: column; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; padding: 1.5rem 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo-title h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; display: flex; align-items: center; gap: 8px; }
+        .logo-title p { font-size: 0.85rem; color: #CBD5E1; margin-top: 2px; }
+        .badge-nsdc { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
+        main { max-width: 1200px; margin: 2rem auto; padding: 0 1rem; width: 100%; flex: 1; }
+        .grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; }
+        @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+        .card { background: var(--card); border-radius: 12px; padding: 1.8rem; box-shadow: 0 4px 16px rgba(0,0,0,0.04); border: 1px solid var(--border); }
+        .card-header { margin-bottom: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; }
+        .card-header h2 { font-size: 1.2rem; color: var(--primary); font-weight: 600; display: flex; align-items: center; gap: 8px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+        .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+        label { font-size: 0.85rem; font-weight: 500; color: var(--text-dark); }
+        input, select { padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.9rem; background: #FAFBFD; transition: all 0.2s; outline: none; }
+        input:focus, select:focus { border-color: var(--secondary); background: white; box-shadow: 0 0 0 3px rgba(2, 136, 209, 0.12); }
+        .btn-predict { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); color: white; border: none; padding: 12px 20px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; width: 100%; margin-top: 0.5rem; }
+        .btn-predict:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(2, 136, 209, 0.25); }
+        .result-panel { display: none; }
+        .metric-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+        .metric-card { background: #F8FAFC; border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem; text-align: center; }
+        .metric-title { font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
+        .metric-value { font-size: 1.6rem; font-weight: 700; margin-top: 4px; color: var(--primary); }
+        .risk-badge { display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: 600; font-size: 0.85rem; margin-top: 8px; }
+        .risk-low { background: #E8F5E9; color: #2E7D32; border: 1px solid #C8E6C9; }
+        .risk-medium { background: #FFF3E0; color: #E65100; border: 1px solid #FFE0B2; }
+        .risk-high { background: #FFEBEE; color: #C62828; border: 1px solid #FFCDD2; }
+        .recommendation-box { background: #F0F9FF; border: 1px solid #B9E6FE; border-radius: 8px; padding: 1rem; margin-top: 1rem; }
+        .recommendation-box h4 { font-size: 0.9rem; color: #0369A1; margin-bottom: 6px; }
+        .recommendation-box p { font-size: 0.85rem; color: #0C4A6E; line-height: 1.4; }
+        footer { text-align: center; padding: 1.5rem; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border); background: white; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <h1>✈️ AeroPredict AI</h1>
+                <p>Real-Time Airport Flight Delay Prediction & Operational Management System</p>
+            </div>
+            <div class="badge-nsdc">AI Pioneers Capstone • Week 4</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid">
+            <!-- INPUT PANEL -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>📋 Flight Operational Parameters</h2>
+                </div>
+                <form id="predictionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="airline">Airline Carrier</label>
+                            <select id="airline" required>
+                                <option value="IndiGo">IndiGo</option>
+                                <option value="Air India">Air India</option>
+                                <option value="SpiceJet">SpiceJet</option>
+                                <option value="Vistara">Vistara</option>
+                                <option value="Akasa Air">Akasa Air</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="aircraft_type">Aircraft Model</label>
+                            <select id="aircraft_type" required>
+                                <option value="Airbus A320neo">Airbus A320neo</option>
+                                <option value="Boeing 737 MAX">Boeing 737 MAX</option>
+                                <option value="Airbus A321neo">Airbus A321neo</option>
+                                <option value="Boeing 787 Dreamliner">Boeing 787 Dreamliner</option>
+                                <option value="ATR 72">ATR 72</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="origin">Origin Airport</label>
+                            <select id="origin" required>
+                                <option value="DEL">DEL (Delhi)</option>
+                                <option value="BOM">BOM (Mumbai)</option>
+                                <option value="BLR">BLR (Bengaluru)</option>
+                                <option value="HYD">HYD (Hyderabad)</option>
+                                <option value="MAA">MAA (Chennai)</option>
+                                <option value="CCU">CCU (Kolkata)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination Airport</label>
+                            <select id="destination" required>
+                                <option value="BOM">BOM (Mumbai)</option>
+                                <option value="DEL">DEL (Delhi)</option>
+                                <option value="BLR">BLR (Bengaluru)</option>
+                                <option value="HYD">HYD (Hyderabad)</option>
+                                <option value="MAA">MAA (Chennai)</option>
+                                <option value="CCU">CCU (Kolkata)</option>
+                                <option value="GOI">GOI (Goa)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="weather">Weather Condition</label>
+                            <select id="weather" required>
+                                <option value="Clear">Clear</option>
+                                <option value="Overcast">Overcast</option>
+                                <option value="Rain">Rain</option>
+                                <option value="Thunderstorm">Thunderstorm</option>
+                                <option value="Fog">Fog</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passenger Count</label>
+                            <input type="number" id="passengers" value="165" min="20" max="350" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="distance">Cruising Distance (km)</label>
+                            <input type="number" id="distance" value="1150" min="200" max="3500" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Flight Duration (mins)</label>
+                            <input type="number" id="duration" value="135" min="30" max="400" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="baggage">Baggage Turnaround Time (mins)</label>
+                        <input type="number" id="baggage" value="26" min="5" max="60" required>
+                    </div>
+
+                    <button type="submit" class="btn-predict" id="predictBtn">⚡ Predict Flight Delay Risk</button>
+                </form>
+            </div>
+
+            <!-- RESULT PANEL -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>🎯 AI Inference Output & Analytics</h2>
+                </div>
+                <div id="emptyState" style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✈️</div>
+                    <p>Enter flight parameters and click <strong>Predict</strong> to run live machine learning inference.</p>
+                </div>
+
+                <div id="resultPanel" class="result-panel">
+                    <div class="metric-cards">
+                        <div class="metric-card">
+                            <div class="metric-title">Delay Probability</div>
+                            <div class="metric-value" id="delayProb">--%</div>
+                            <span class="risk-badge" id="riskBadge">LOW RISK</span>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-title">Estimated Delay</div>
+                            <div class="metric-value" id="estDelay">-- min</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 6px;">Random Forest Regression</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Operational Status:</label>
+                        <div id="statusText" style="font-weight: 600; font-size: 1.05rem; padding: 10px; background: #FAFBFD; border-radius: 8px; border: 1px solid var(--border);">--</div>
+                    </div>
+
+                    <div class="recommendation-box">
+                        <h4>💡 Ground Staff Operational Guidance</h4>
+                        <p id="recommendationText">--</p>
+                    </div>
+
+                    <div style="margin-top: 1.5rem; font-size: 0.75rem; color: var(--text-muted); text-align: right;">
+                        Inference Latency: <span id="latencyText" style="font-weight: 600; color: var(--secondary);">-- ms</span> | Model: v1.0.0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        AI Pioneers Internship (Yuva Intern / NSDC) • Week 4 Capstone Project • Anand Patgar
+    </footer>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('predictBtn');
+            btn.innerHTML = '⏳ Computing Inference...';
+            btn.disabled = true;
+            
+            const payload = {
+                airline: document.getElementById('airline').value,
+                aircraft_type: document.getElementById('aircraft_type').value,
+                weather_condition: document.getElementById('weather').value,
+                distance_km: parseFloat(document.getElementById('distance').value),
+                flight_duration_min: parseFloat(document.getElementById('duration').value),
+                passenger_count: parseInt(document.getElementById('passengers').value),
+                baggage_handling_min: parseFloat(document.getElementById('baggage').value)
+            };
+
+            const startTime = performance.now();
+            try {
+                const res = await fetch('/api/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+                const latency = Math.round(performance.now() - startTime);
+
+                document.getElementById('emptyState').style.display = 'none';
+                const panel = document.getElementById('resultPanel');
+                panel.style.display = 'block';
+
+                document.getElementById('delayProb').innerText = data.delay_probability + '%';
+                document.getElementById('estDelay').innerText = data.estimated_delay_minutes + ' min';
+                document.getElementById('statusText').innerText = data.prediction_summary;
+                document.getElementById('recommendationText').innerText = data.recommendation;
+                document.getElementById('latencyText').innerText = latency + ' ms';
+
+                const badge = document.getElementById('riskBadge');
+                badge.className = 'risk-badge ' + (data.risk_level === 'High' ? 'risk-high' : (data.risk_level === 'Medium' ? 'risk-medium' : 'risk-low'));
+                badge.innerText = data.risk_level.toUpperCase() + ' DELAY RISK';
+            } catch (err) {
+                alert('Inference error: ' + err);
+            } finally {
+                btn.innerHTML = '⚡ Predict Flight Delay Risk';
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

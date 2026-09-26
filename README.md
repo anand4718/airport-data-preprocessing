@@ -1,6 +1,12 @@
-# AI Pioneers Internship - Airport Operations & Flight Analytics Pipeline
-**Program:** AI Pioneers Internship (Yuva Intern / NSDC)  
-**Domain:** Aviation Logistics, Flight Delay Analytics & Applied Machine Learning  
+# ✈️ AeroPredict: Airport Operations Flight Delay Prediction & Management System
+**AI Pioneers Internship (Yuva Intern / NSDC) — Final Capstone Project**  
+**Author:** Anand Patgar  
+**Domain:** Aviation Logistics, Real-Time Airport Operations & Applied Machine Learning  
+
+---
+
+## 📌 Executive Summary
+**AeroPredict** is an end-to-end production Machine Learning application designed to forecast and mitigate commercial flight delays. Built across a 4-week rigorous curriculum under the **AI Pioneers Internship**, the project spans the complete AI lifecycle: from raw tabular data ingestion and statistical preprocessing to supervised delay modeling, unsupervised operational clustering, model serialization, and microservice deployment via a **Flask REST API** and interactive **Web Dashboard**.
 
 ---
 
@@ -8,13 +14,23 @@
 ```text
 ├── airport_operations_dataset.csv               # Raw airport operations dataset (500 records)
 ├── cleaned_airport_dataset.csv                 # Cleaned & preprocessed ML-ready dataset
-├── airport_preprocessing.py                     # Week 1: Data Cleaning, Imputation & Scaling Pipeline
-├── supervised_learning.py                       # Week 2: Supervised Learning (Regression & Classification)
-├── unsupervised_and_evaluation.py               # Week 3: Unsupervised Clustering & Advanced Evaluation
-├── Week_1_Airport_Data_Preprocessing_Report.docx # Week 1 Submission Report (.docx)
-├── Week_2_Supervised_Learning_Report.docx       # Week 2 Submission Report (.docx)
-├── Week_3_Unsupervised_Learning_Report.docx     # Week 3 Submission Report (.docx)
-├── plots/                                       # Visualizations & Evaluation Charts
+├── airport_preprocessing.py                     # Week 1: Data Cleaning, Imputation & Scaling
+├── supervised_learning.py                       # Week 2: Supervised ML (Regression & Classification)
+├── unsupervised_and_evaluation.py               # Week 3: Clustering, PCA & 5-Fold Cross-Validation
+├── app.py                                       # Week 4: Flask REST API & Web Server
+├── test_api.py                                  # Week 4: Automated Model Inference Test Suite
+├── templates/
+│   └── index.html                               # Modern HTML5/CSS3 Dispatcher Dashboard UI
+├── models/
+│   ├── airport_delay_classifier.joblib          # Serialized Random Forest Classifier
+│   ├── airport_delay_regressor.joblib           # Serialized Random Forest Regressor
+│   ├── scaler.joblib                            # Serialized StandardScaler
+│   └── model_metadata.json                      # Model versions, schemas, and metrics
+├── Week_1_Airport_Data_Preprocessing_Report.docx # Week 1 Milestone Report (.docx)
+├── Week_2_Supervised_Learning_Report.docx       # Week 2 Milestone Report (.docx)
+├── Week_3_Unsupervised_Learning_Report.docx     # Week 3 Milestone Report (.docx)
+├── Week_4_AI_Project_Deployment_Report.docx     # Week 4 Final Capstone Report (.docx)
+├── plots/                                       # Analytical Visualizations & Evaluation Charts
 │   ├── eda_missing_data.png                     # Missing value diagnostics
 │   ├── eda_weather_delays.png                   # Delay distribution across weather
 │   ├── eda_correlation_heatmap.png              # Pearson correlation matrix
@@ -28,72 +44,88 @@
 │   ├── pca_clusters_visualization.png           # 2D PCA projection of flight operational clusters
 │   ├── hierarchical_dendrogram.png              # Hierarchical Ward linkage dendrogram
 │   ├── kfold_cross_validation_comparison.png    # 5-Fold Stratified CV benchmark comparison
-│   └── hyperparameter_tuning_comparison.png    # Baseline vs Tuned Random Forest comparison
-└── README.md                                    # Comprehensive project documentation
+│   ├── hyperparameter_tuning_comparison.png    # Baseline vs Tuned Random Forest comparison
+│   └── system_architecture.png                  # End-to-end system deployment architecture
+└── README.md                                    # Complete project documentation
 ```
 
 ---
 
-## 🚀 Overview of Weekly Milestones
+## 🗓️ Complete 4-Week Technical Progression
 
 ### 🔹 Week 1: Python for ML & Data Preprocessing
-- **Data Ingestion & Cleaning:** Handled missing flight durations, cruising distances, and weather conditions via median, mean, and mode imputation.
-- **Outlier Capping:** Applied Interquartile Range (**IQR**) capping on departure delays.
-- **Feature Engineering & Scaling:** Synthesized `Calculated_Speed_kmh`, one-hot encoded nominal categories, and standardized features via `StandardScaler`.
+- **Data Ingestion:** Ingested 500 commercial flight records across major Indian hubs (DEL, BOM, BLR, HYD, MAA, CCU).
+- **Statistical Imputation:** Resolved missing values via Median (continuous skewed features), Mean (Gaussian baggage turnaround), and Mode (weather conditions).
+- **Outlier Capping:** Applied Interquartile Range (**IQR**) filtering to cap extreme delay spikes without row deletion.
+- **Feature Engineering & Scaling:** Derived `Calculated_Speed_kmh`, one-hot encoded nominal attributes, and standardized continuous columns with `StandardScaler` ($z = \frac{x - \mu}{\sigma}$).
 
 ### 🔹 Week 2: Supervised Machine Learning Models
-- **Regression (Delay Minutes):** Trained Linear Regression, Decision Tree, Random Forest, and KNN. Decision Tree & Linear Regression achieved **MAE of ~14.0 mins** and **$R^2 \approx 0.43$**.
-- **Classification (Severe Delay > 30m):** Trained Logistic Regression (**83.0% Accuracy, 92.0% Precision**), Random Forest (**82.0% Accuracy**), Decision Tree (**79.0%**), and KNN (**64.0%**).
+- **Regression (Delay Duration in Minutes):** Evaluated Linear Regression, Decision Tree, Random Forest, and KNN. Decision Tree and Linear Regression achieved **MAE $\approx$ 14.0 mins** and **$R^2 = 0.43$**.
+- **Classification (Severe Delay > 30 mins):** Evaluated Logistic Regression (**83.0% Accuracy, 92.0% Precision, 73.0% F1**), Random Forest (**82.0% Accuracy**), Decision Tree (**79.0%**), and KNN (**64.0%**).
 
-### 🔹 Week 3: Unsupervised Learning & Model Evaluation
-- **Dimensionality Reduction:** Computed **Principal Component Analysis (PCA)** to extract principal axes of variance for 2D visualization.
-- **K-Means Clustering:** Evaluated cluster range $k \in [2, 6]$ using the **Elbow Method (Inertia)** and **Silhouette Coefficient**, establishing $k = 3$ as optimal.
-- **Hierarchical Clustering:** Built an agglomerative **Dendrogram** with Ward linkage, confirming 3 operational flight segments.
-- **5-Fold Stratified Cross-Validation:** Validated model generalization across 5 folds (Logistic Regression: **81.6% ± 1.6%**, Random Forest: **81.4% ± 2.2%**).
-- **Hyperparameter Optimization:** Executed **GridSearchCV** over 54 parameter combinations for Random Forest, achieving **91.67% test precision** and **0.753 ROC-AUC**.
+### 🔹 Week 3: Unsupervised Learning & Advanced Evaluation
+- **Dimensionality Reduction:** Computed **Principal Component Analysis (PCA)** to project 17 features onto 2 orthogonal principal components.
+- **Clustering:** Determined optimal $k = 3$ clusters using the **Elbow Method (Inertia)** and **Silhouette Score**, identifying Regional Connectors, Heavy Long-Haul, and Weather-Disrupted flight corridors.
+- **Hierarchical Dendrogram:** Validated cluster boundaries using Ward's minimum variance agglomeration.
+- **Rigorous Evaluation:** Conducted **5-Fold Stratified Cross-Validation** (Logistic Regression: **81.6% ± 1.6%**) and **GridSearchCV** hyperparameter tuning.
 
----
-
-## 📊 Summary of Week 3 Benchmark Results
-
-### 1. K-Means Operational Flight Clusters ($k=3$)
-| Cluster | Profile | Flight Count | Avg Distance | Avg Duration | Avg Delay | Severe Delay Rate |
-| :---: | :--- | :---: | :---: | :---: | :---: | :---: |
-| **0** | Medium-Haul Regional | 154 | 1,220 km | 182 min | 28.3 min | 34.0% |
-| **1** | Long-Haul Heavy Trunk | 172 | 1,423 km | 209 min | 27.5 min | 38.0% |
-| **2** | Weather-Disrupted Short Hub | 174 | 714 km | 114 min | 31.6 min | **42.0%** |
-
-### 2. 5-Fold Stratified Cross-Validation Benchmark
-| Classifier | Mean CV Accuracy (%) | Standard Deviation (±%) | Mean CV F1-Score (%) | Mean CV ROC-AUC |
-| :--- | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | **81.60%** | **±1.62%** | **70.18%** | **0.7676** |
-| **Random Forest** | 81.40% | ±2.24% | 69.50% | 0.7274 |
-| **Decision Tree** | 80.60% | ±1.36% | 68.09% | 0.7593 |
-| **KNN ($k=5$)** | 62.20% | ±3.97% | 34.04% | 0.5877 |
+### 🔹 Week 4: Model Deployment & Final Capstone
+- **Model Serialization:** Serialized dual-head ML estimators and standard scalers using **Joblib** into the `models/` registry.
+- **Flask REST API:** Built production endpoints:
+  - `GET /`: Interactive web dashboard for operations dispatchers.
+  - `GET /health`: Microservice telemetry and health status.
+  - `POST /api/predict`: JSON inference API returning delay probability, estimated delay minutes, risk tiers (Low/Medium/High), and actionable ground staff recommendations.
+- **Automated Verification:** Verified sub-50ms inference latency across multiple flight operational test cases (`test_api.py`).
 
 ---
 
-## 🛠️ How to Execute
+## 🚀 Quick Start & Deployment Guide
 
-### 1. Setup Environment
+### 1. Install Dependencies
 ```bash
-pip install pandas numpy scikit-learn scipy matplotlib seaborn python-docx
+pip install flask joblib scikit-learn pandas numpy matplotlib seaborn scipy python-docx
 ```
 
-### 2. Run All Pipelines
+### 2. Launch the Flask Web Application
 ```bash
-# Week 1 Preprocessing
-python airport_preprocessing.py
+python app.py
+```
+Open your browser and navigate to: **`http://127.0.0.1:5000`**
 
-# Week 2 Supervised Learning
-python supervised_learning.py
+### 3. Run Automated Model Verification
+```bash
+python test_api.py
+```
 
-# Week 3 Unsupervised Learning & Advanced Evaluation
-python unsupervised_and_evaluation.py
+### 4. Sample API Request via cURL
+```bash
+curl -X POST http://127.0.0.1:5000/api/predict      -H "Content-Type: application/json"      -d '{
+       "airline": "SpiceJet",
+       "aircraft_type": "Boeing 737 MAX",
+       "weather_condition": "Thunderstorm",
+       "distance_km": 800.0,
+       "flight_duration_min": 110.0,
+       "passenger_count": 185,
+       "baggage_handling_min": 38.0
+     }'
+```
+
+**Sample Response:**
+```json
+{
+  "status": "success",
+  "is_delayed": true,
+  "delay_probability": 89.5,
+  "estimated_delay_minutes": 76.6,
+  "risk_level": "High",
+  "prediction_summary": "⚠️ High Probability of Severe Flight Delay (>30 mins)",
+  "recommendation": "Adverse conditions detected (Weather/Turnaround). Issue ground hold warning, notify passengers, and prioritize apron turnaround sequence."
+}
 ```
 
 ---
 
-## 👨‍💻 Author & Repository Link
+## 👨‍💻 Author & Submission
 - **Internship:** AI Pioneers Internship (Yuva Intern / NSDC)
+- **Author:** Anand Patgar
 - **Repository:** [https://github.com/anand4718/airport-data-preprocessing](https://github.com/anand4718/airport-data-preprocessing)

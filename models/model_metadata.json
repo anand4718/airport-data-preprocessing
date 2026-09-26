@@ -1,0 +1,42 @@
+{
+    "project": "Airport Operations Flight Delay Prediction & Management System",
+    "version": "1.0.0",
+    "author": "Anand Patgar (AI Pioneers Internship)",
+    "models": {
+        "classifier": "RandomForestClassifier (n_estimators=100, max_depth=6)",
+        "regressor": "RandomForestRegressor (n_estimators=100, max_depth=6)",
+        "scaler": "StandardScaler"
+    },
+    "continuous_features": [
+        "Distance_km",
+        "Flight_Duration_min",
+        "Passenger_Count",
+        "Baggage_Handling_min",
+        "Calculated_Speed_kmh"
+    ],
+    "feature_columns": [
+        "Distance_km_scaled",
+        "Flight_Duration_min_scaled",
+        "Passenger_Count_scaled",
+        "Baggage_Handling_min_scaled",
+        "Calculated_Speed_kmh_scaled",
+        "Airline_Akasa Air",
+        "Airline_IndiGo",
+        "Airline_SpiceJet",
+        "Airline_Vistara",
+        "Weather_Condition_Fog",
+        "Weather_Condition_Overcast",
+        "Weather_Condition_Rain",
+        "Weather_Condition_Thunderstorm",
+        "Aircraft_Type_Airbus A320neo",
+        "Aircraft_Type_Airbus A321neo",
+        "Aircraft_Type_Boeing 737 MAX",
+        "Aircraft_Type_Boeing 787 Dreamliner"
+    ],
+    "performance": {
+        "classification_accuracy": "82.5%",
+        "classification_precision": "91.7%",
+        "regression_mae": "14.0 min",
+        "regression_r2": "0.42"
+    }
+}
